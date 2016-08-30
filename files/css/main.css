@@ -274,3 +274,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 	background:#333333;
 	color:#ffffff;
 }
+
+.background-1 {
+     background: url('Images/mybg1.jpg');
+     -webkit-transition: background 500ms linear;
+     -moz-transition: background 500ms linear;
+     -o-transition: background 500ms linear;
+     -ms-transition: background 500ms linear;
+     transition: background 500ms linear;
+}
+
+.background-2 {
+     background: url('Images/mybg2.jpg');
+     -webkit-transition: background 500ms linear;
+     -moz-transition: background 500ms linear;
+     -o-transition: background 500ms linear;
+     -ms-transition: background 500ms linear;
+     transition: background 500ms linear;
+}
