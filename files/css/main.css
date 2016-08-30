@@ -256,3 +256,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 @-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+#homelinks a{
+	font-size:1.5em;
+	color:#333333;
+	text-decoration:none;	
+}
+
+#homelinks a:hover {
+	text-decoration:none;
+	color:#0098cc;
+}
+
+
+.modal-content {
+	border-style:none;
+	background:#333333;
+	color:#ffffff;
+}
