@@ -7,6 +7,11 @@ col_lightgray{color:#999999;}
 
 col_darkgray{color:#333333;}
 
+@font-face {
+    font-family: Rockwell;
+    src: url('files/fonts/ROCK.TTF');
+}
+
 /* navbar */
 
 .navbar-inverse {
