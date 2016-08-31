@@ -27,7 +27,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 /* title */
 .navbar-inverse .navbar-brand {
     color: #444444;
-	font-size:1.4em;
+	font-size:1.3em;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
