@@ -7,11 +7,6 @@ col_lightgray{color:#999999;}
 
 col_darkgray{color:#333333;}
 
-@font-face {
-    font-family: Rockwell;
-    src: url('files/fonts/ROCK.TTF');
-}
-
 /* navbar */
 
 .navbar-inverse {
@@ -32,7 +27,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 /* title */
 .navbar-inverse .navbar-brand {
     color: #444444;
-	font-family: Rockwell;
+	font-size:1.4em;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
