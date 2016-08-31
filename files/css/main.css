@@ -26,15 +26,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 
 /* title */
 .navbar-inverse .navbar-brand {
-    color: #0099cc;
+    color: #444444;
+	font-family: Rockwell;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-    color: #0099cc;
+    color: #444444;
 }
 /* link */
 .navbar-inverse .navbar-nav > li > a {
-    color: #999999;
+    color: #777777;
 	/*margin-top:2px;
 	margin-bottom:2px;
 	margin-right:2px;
@@ -42,8 +43,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-    color: #999999;
-	font-weight:bold;
+    color: #444444;
 	background-color:rgba(255,255,255,0);
 }
 .navbar-inverse .navbar-nav > .active > a, 
@@ -51,7 +51,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 .navbar-inverse .navbar-nav > .active > a:focus {
     color: #0099cc;
     background-color: rgba(255,255,255,0);
-	font-weight:bold;
 }
 .navbar-inverse .navbar-nav > .open > a, 
 .navbar-inverse .navbar-nav > .open > a:hover, 
