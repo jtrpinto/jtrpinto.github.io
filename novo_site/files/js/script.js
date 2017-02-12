@@ -1,13 +1,13 @@
 var msgIX = 0
 var msgs = new Array(
-  "signal processing.",
-  "computer vision.",
-  "data science.",
-  "mobile apps.",
-  "gui design.",
-  "web development.",
-  "sensors & electronics.",
-  "biomedical engineering."
+  "SIGNAL PROCESSING",
+  "COMPUTER VISION",
+  "DATA SCIENCE",
+  "MOBILE APPS",
+  "GUI DESIGN",
+  "WEB DEVELOPMENT",
+  "SENSORS & ELECTRONICS",
+  "BIOMEDICAL ENGINEERING"
 )
 
 function displayMessage(milliseconds) {
