@@ -43,7 +43,7 @@ body {
   display: none;
 }
 
-@media (max-width: 40em){
+@media (max-width: 37em){
   #top-bar-name-big {
     display: none;
   }
