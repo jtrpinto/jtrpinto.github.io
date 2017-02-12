@@ -64,7 +64,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top:10px;
-  padding-bottom:10px;
+  padding-bottom:6px;
   color: white;
   visibility: hidden;
 }
@@ -86,11 +86,10 @@ body {
 .top-bar .links{
   float:right;
   margin-right: 20px;
-  font-size: 1.5em;
 }
 
 .top-bar .link{
-  width: 1.25em;
+  width: 1.8em;
 }
 
 .header-box {
@@ -127,8 +126,8 @@ body {
 .page-name{
   position: absolute;
   left:40px;
-  bottom: -6px;
-  font-size: 1.4em;
+  bottom: -8px;
+  font-size: 1.6em;
   padding: 0;
   color:rgba(255,255,255, 0.5);
 }
