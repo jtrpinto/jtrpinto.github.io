@@ -114,6 +114,7 @@ body {
 .header-box .name{
   font-size: 3em;
   line-height: 1em;
+  margin-bottom: 30px;
 }
 
 .header-box .highlight{
