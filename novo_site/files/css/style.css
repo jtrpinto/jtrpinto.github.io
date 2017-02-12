@@ -96,7 +96,7 @@ body {
 .header-box {
   position: relative;
   font-family: 'Roboto Slab', serif;
-  padding: 40px 40px 20px 40px;
+  padding: 40px 40px 60px 40px;
   background-color: #4397d8;
   color: #FFF;
   background-image: url('../images/bg2.png');
@@ -114,7 +114,6 @@ body {
 .header-box .name{
   font-size: 3em;
   line-height: 1em;
-  margin-bottom: 30px;
 }
 
 .header-box .highlight{
@@ -123,6 +122,15 @@ body {
   text-align: right;
   font-size: 1.2em;
   margin-bottom: 10px;
+}
+
+.page-name{
+  position: absolute;
+  left:40px;
+  bottom: -6px;
+  font-size: 1.4em;
+  padding: 0;
+  color:rgba(255,255,255, 0.5);
 }
 
 .menu-box {
@@ -187,15 +195,6 @@ body {
   position: relative;
   margin: 40px;
   margin-top:10px;
-}
-
-.page-name{
-  position: absolute;
-  left:0;
-  bottom: -10px;
-  font-size: 1.6em;
-  padding: 0;
-  color:rgba(255,255,255, 0.3);
 }
 
 .footer-box {
