@@ -80,13 +80,13 @@ body {
   float: left;
   margin-left: 20px;
   font-family: 'Roboto Slab', serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .top-bar .links{
   float:right;
   margin-right: 20px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .top-bar .link{
