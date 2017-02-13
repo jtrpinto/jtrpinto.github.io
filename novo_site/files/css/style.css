@@ -127,7 +127,7 @@ body {
 
 .menu-box {
   text-align:center;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .menu-box ul {
@@ -163,7 +163,7 @@ body {
 }
 
 .menu-box-handle {
-  font-size: 0.9em;
+  font-size: 1em;
   border-top-style: solid;
   border-top-color: #EEE;
   position:relative;
