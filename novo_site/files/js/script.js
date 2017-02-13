@@ -10,6 +10,23 @@ var msgs = new Array(
   "BIOMEDICAL ENGINEERING"
 )
 
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+
+function handleMenuBox(){
+  if (document.getElementById('menu-box-inner').style.display == "block"){
+    document.getElementById('menu-box-inner').style.display = "none";
+  } else {
+    document.getElementById('menu-box-inner').style.display = "block";
+  }
+
+}
+
 function displayMessage(milliseconds) {
   if(msgIX < msgs.length){
     if(document.getElementById != null) {

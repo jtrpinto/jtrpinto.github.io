@@ -1,6 +1,16 @@
 /* blood-orange: #ff2a00 */
 /* cyan: #1a9ced */
 
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { height: 100%; }
+}
+@keyframes fadeIn {
+    from { height: 0; }
+      to { height: 100%; }
+}
+
 html {
   background-image: url('../images/bkg.png');
   background-repeat:repeat;
@@ -41,15 +51,6 @@ body {
 }
 #top-bar-name-small {
   display: none;
-}
-
-@media (max-width: 37em){
-  #top-bar-name-big {
-    display: none;
-  }
-  #top-bar-name-small {
-    display: inline;
-  }
 }
 
 .top-bar{
@@ -115,15 +116,7 @@ body {
   line-height: 1em;
 }
 
-.header-box .highlight{
-  display: block;
-  margin-top: 20px;
-  text-align: right;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.page-name{
+.header-highlight{
   position: absolute;
   left:40px;
   bottom: -8px;
@@ -139,8 +132,8 @@ body {
 
 .menu-box ul {
   list-style: none;
-  padding: 0px;
-  margin: 10px;
+  padding: 10px;
+  margin: 0px 30px 0px 30px;
 }
 
 .menu-box li {
@@ -152,13 +145,42 @@ body {
 .menu-box a {
   text-decoration: none;
   color: #888;
-  padding: 7px;
+  padding: 5px;
   border-radius: 8px;
 }
 
-.menu-box a:hover{
+.menu-box-inner a:hover{
   color: #4397d8;
-  background-color: rgba(67, 151, 216, 0.15);
+  /*background-color: rgba(67, 151, 216, 0.15);*/
+  background-color: #FFF;
+}
+
+.menu-box-inner {
+  height: 100%;
+  opacity: 1;
+  background-color: #EEE;
+  display: none;
+}
+
+.menu-box-handle {
+  font-size: 0.9em;
+  border-top-style: solid;
+  border-top-color: #EEE;
+  position:relative;
+}
+
+.menu-box-handle a {
+  color: #CCC;
+}
+
+.menu-triangle {
+  width: 15px;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .default-box .title{
@@ -300,4 +322,19 @@ body {
   display: table-cell;
   text-align: left;
   width:100%;
+}
+
+@media (max-width: 37em){
+  #top-bar-name-big {
+    display: none;
+  }
+  #top-bar-name-small {
+    display: inline;
+  }
+  .media-item-image {
+    display: none;
+  }
+  .media-item-image img{
+    display: none;
+  }
 }
