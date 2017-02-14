@@ -1,5 +1,5 @@
-/* blood-orange: #ff2a00 */
-/* cyan: #1a9ced */
+/* blood-orange: #ff2a00 (255,42,0*/
+/* cyan: #4397d8 rgba(67, 151, 216, 0.15) */
 
 
 @-webkit-keyframes fadeIn {
@@ -33,10 +33,10 @@ body {
 }
 
 ::selection {
-  background: rgba(67, 151, 216,0.2); /* WebKit/Blink Browsers */
+  background: rgba(255, 42, 0,0.2); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: rgba(67, 151, 216,0.2); /* Gecko Browsers */
+  background: rgba(255, 42, 0,0.2); /* Gecko Browsers */
 }
 
 @media (max-width: 55em) {
@@ -60,8 +60,8 @@ body {
   width: 100%;
   max-width: 50em;
   margin: 0 auto;
-  background-color: #4397d8;
-  background-image: url('../images/bg2.png');
+  background-color: #ff2a00;
+  background-image: url('../images/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding-top:10px;
@@ -97,9 +97,9 @@ body {
   position: relative;
   font-family: 'Roboto Slab', serif;
   padding: 40px 40px 60px 40px;
-  background-color: #4397d8;
+  background-color: #ff2a00;
   color: #FFF;
-  background-image: url('../images/bg2.png');
+  background-image: url('../images/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -148,11 +148,12 @@ body {
   color: #888;
   padding: 3px 8px 3px 8px;
   border-radius: 8px;
+  transition: 0.5s;
 }
 
 #menu-box-inner-links a:hover{
-  color: #4397d8;
-  /*background-color: rgba(67, 151, 216, 0.15);*/
+  color: #ff2a00;
+  /*background-color: rgba(255, 42, 0, 0.15);*/
   background-color: #fff;
 }
 
@@ -196,19 +197,30 @@ body {
 }
 
 .default-box .title{
-  font-family: 'Marck Script', cursive;
+  /*font-family: 'Marck Script', cursive;*/
+  font-family: 'Indie Flower', cursive;
   font-size: 1.8em;
   line-height: 0.8em;
   display: block;
   width: 75%;
-  color: #4397d8;
+  color: #ff2a00;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 20px;
   border-bottom-style: solid;
-  border-bottom-color: #4397d8;
+  border-bottom-color: #ff2a00;
   border-width: thin;
   padding-top: 40px;
+}
+
+.default-box .subtitle{
+  font-size: 1.2em;
+  color: #ff2a00;
+  margin-bottom: 15px;
+}
+
+.default-box .panel + .subtitle{
+  margin-top: 30px;
 }
 
 .default-box .text{
@@ -288,7 +300,12 @@ body {
 }
 
 .media-item-subtitle{
-  color: #4397d8;
+  color: #ff2a00;
+}
+
+.media-item-info{
+  color: #333;
+  font-size: 0.9em;
 }
 
 .media-item-description{
@@ -309,10 +326,11 @@ body {
 .item-list li{
   padding:7px;
   border-radius: 10px;
+  transition: 0.5s;
 }
 .item-list li:hover{
-  background-color: rgba(67, 151, 216, 0.15);
-  color: #4397d8;
+  background-color: rgba(255, 42, 0, 0.15);
+  color: #ff2a00;
 }
 
 .item-list-date{
@@ -320,7 +338,7 @@ body {
   display: table-cell;
   vertical-align: top;
   font-size: 0.8em;
-  color:#4397d8;
+  color:#ff2a00;
   min-width:7em;
   right:0;
 }
@@ -334,6 +352,40 @@ body {
   display: table-cell;
   text-align: left;
   width:100%;
+}
+
+button.accordion {
+    font-family: inherit;
+    font-size: inherit;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    background-color: #fff;
+    padding:7px;
+    border-radius: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+  background-color: rgba(255, 42, 0, 0.15);
+  color: #ff2a00;
+}
+
+.panel + button.accordion{
+  margin-top: 5px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+  padding: 0px 10px;
+  background-color: white;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
 
 @media (max-width: 37em){
@@ -358,4 +410,9 @@ body {
   #menu-box-inner-icons {
     display: block;
   }
+}
+
+.fa{
+  color: #ff2a00;
+  font-size: 0.9em;
 }
