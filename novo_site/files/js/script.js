@@ -50,8 +50,14 @@ function init() {
             shrinkOn = 300;
         if (distanceY > shrinkOn) {
             document.getElementById('top-bar').style.visibility = 'visible';
+            document.getElementById('top-bar').style.opacity = 1;
+            document.getElementById('totop-a').style.visibility = 'visible';
+            document.getElementById('totop').style.opacity = 1;
         } else {
+            document.getElementById('top-bar').style.opacity = 0;
             document.getElementById('top-bar').style.visibility = 'hidden';
+            document.getElementById('totop').style.opacity = 0;
+            document.getElementById('totop-a').style.visibility = 'hidden';
         }
     });
 }
