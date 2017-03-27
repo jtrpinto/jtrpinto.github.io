@@ -480,6 +480,11 @@ a .fa{
   font-size: 0.9em;
 }
 
+a {
+  text-decoration: none;
+  color: #4397d8;
+}
+
 .totop{
   position: fixed;
   bottom: 2em;
