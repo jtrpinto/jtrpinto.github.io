@@ -231,7 +231,15 @@ body {
 .default-box .areas{
   font-size: 0.9em;
   display: none;
-  text-align: justify;
+  text-align: center;
+}
+
+.default-box .areas .areas-title{
+  /*font-family: 'Galada', cursive;
+  font-style: italic;*/
+  display: block;
+  color: #4397d8;
+  font-size: 1.5em;
 }
 
 .default-box + .default-box {
@@ -555,11 +563,6 @@ a {
 .grid-item-3 img{
   width: 90%;
   transition: 0.5s;
-}
-
-
-.default-box .areas:target{
-  display: block;
 }
 
 .grid-icon:hover {

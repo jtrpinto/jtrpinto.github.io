@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <link rel="icon" href="files/images/jrp2.png">
   <title>João Ribeiro Pinto</title>
-  <script language="JavaScript" src="files/js/script.js"></script>
   <meta name="viewport" content="width=device-width"/>
   <link href="https://fonts.googleapis.com/css?family=Exo+2:300|Marck+Script|Oxygen+Mono|Galada|Indie+Flower|Roboto+Slab:700|Rokkitt:500|Nunito+Sans|Cabin|Inder" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="files/css/style2.css">
@@ -66,33 +65,89 @@
       <div class="text">
         <div class="grid">
           <div class="grid-item">
-            <a href="#box-ml" onclick=""><img src="files/images/ml2.png"></a>
+            <a style='cursor: pointer;' onclick="seefield('box-ml')"><img src="files/images/ml2.png"></a>
           </div>
           <div class="grid-item">
-            <a href="#box-signal" onclick=""><img src="files/images/signal2.png"></a>
+            <a style='cursor: pointer;' onclick="seefield('box-signal')"><img src="files/images/signal2.png"></a>
           </div>
           <div class="grid-item">
-            <img src="files/images/ia2.png">
+            <a style='cursor: pointer;' onclick="seefield('box-ia')"><img src="files/images/ia2.png"></a>
           </div>
           <div class="grid-item">
-            <img src="files/images/web2.png">
+            <a style='cursor: pointer;' onclick="seefield('box-web')"><img src="files/images/web2.png"></a>
           </div>
           <div class="grid-item">
-            <img src="files/images/mobile2.png">
+            <a style='cursor: pointer;' onclick="seefield('box-mobile')"><img src="files/images/mobile2.png"></a>
           </div>
           <div class="grid-item">
-            <img src="files/images/soft2.png">
+            <a style='cursor: pointer;' onclick="seefield('box-soft')"><img src="files/images/soft2.png"></a>
           </div>
           <div class="grid-item">
-            <img src="files/images/elect2.png">
+            <a style='cursor: pointer;' onclick="seefield('box-elect')"><img src="files/images/elect2.png"></a>
           </div>
         </div>
       </div>
-      <div id="box-ml" class="areas">
-        Machine Learning
+      <div id="box-ml" class="areas" style="display: block;">
+        <span class="areas-title">Machine Learning & Data Science</span>
+        <span class="areas-text">
+          - Supervised classification and regression;<br>
+          - Unsupervised clustering methods;<br>
+          - Data analysis and visualisation;<br>
+          - Prediction, pattern recognition, and modelling.
+        </span>
       </div>
       <div id="box-signal" class="areas">
-        Signal Processing
+        <span class="areas-title">Signal Processing</span>
+        <span class="areas-text">
+          - Analogic and digital processing;<br>
+          - Methods for noise attenuation;<br>
+          - Extraction of relevant features;<br>
+          - Applications using machine learning.
+        </span>
+      </div>
+      <div id="box-ia" class="areas">
+        <span class="areas-title">Computer Vision</span>
+        <span class="areas-text">
+          - Image processing and analysis;<br>
+          - Noise filtering and quality enhancement;<br>
+          - Feature extraction and segmentation;<br>
+          - Pattern recognition and classification.
+        </span>
+      </div>
+      <div id="box-web" class="areas">
+        <span class="areas-title">Web Development</span>
+        <span class="areas-text">
+          - HTML, CSS, Sass, JavaScript, PHP;<br>
+          - Bootstrap framework and React.js;<br>
+          - Database design and SQL;<br>
+          - Experience with cPanel hosting management;<br>
+          - Experience with MyPHP and PostgreSQL.
+        </span>
+      </div>
+      <div id="box-mobile" class="areas">
+        <span class="areas-title">Mobile Apps & UX Design</span>
+        <span class="areas-text">
+          - Design and development of Android apps;<br>
+          - Use of integrated and external sensors;<br>
+          - Design of GUI adapted for diverse purposes.
+        </span>
+      </div>
+      <div id="box-soft" class="areas">
+        <span class="areas-title">Software Engineering</span>
+        <span class="areas-text">
+          - Knowledge in data structure and algorithms;<br>
+          - UML modelling experience;<br>
+          - Agile development methods (Scrum);<br>
+          - Validation, verification, and software testing.
+        </span>
+      </div>
+      <div id="box-elect" class="areas">
+        <span class="areas-title">Sensors & Electronics</span>
+        <span class="areas-text">
+          - Electronic circuits;<br>
+          - Integration of sensors, controllers, and actuators;<br>
+          - Signal acquisition and analogic processing.
+        </span>
       </div>
     </div>
 
@@ -173,5 +228,6 @@
     <a id="totop-a" href="#"><i id="totop" class="fa fa-chevron-up" aria-hidden="true"></i></a>
   </div>
   <script src="files/js/zenscroll-dist/zenscroll-min.js"></script>
+  <script language="JavaScript" src="files/js/script.js"></script>
 </body>
 </html>
