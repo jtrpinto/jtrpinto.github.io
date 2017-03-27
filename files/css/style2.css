@@ -197,7 +197,7 @@ body {
 }
 
 .default-box .title{
-  font-family: 'Galada', cursive;
+  font-family: 'Galada';
   /*font-family: 'Indie Flower', cursive;*/
   font-size: 1.8em;
   line-height: 0.8em;
