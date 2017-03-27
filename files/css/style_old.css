@@ -12,7 +12,7 @@
 }
 
 html {
-  background-image: url('../images/bg3.png');
+  background-image: url('../images/bkg.png');
   background-repeat:repeat;
   background-size: 200px;
   color: #333;
@@ -25,10 +25,11 @@ html {
 }
 
 body {
-  background-color: rgba(0,0,0,0);
+  background-color: white;
   color:inherit;
   max-width: 55em;
   margin: 30px auto;
+  box-shadow: 0px 0px 25px 4px #000;
 }
 
 ::selection {
@@ -50,12 +51,12 @@ body {
   z-index: 999;
   top:0;
   width: 100%;
-  max-width: 55em;
+  max-width: 50em;
   margin: 0 auto;
   background-color: #4397d8;
-  /*background-image: url('../images/bg.png');
+  background-image: url('../images/bg.png');
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
   padding-top:10px;
   padding-bottom:6px;
   color: white;
@@ -90,13 +91,12 @@ body {
 .header-box {
   position: relative;
   font-family: 'Roboto Slab', serif;
-  color: #FFF;
   padding: 40px 40px 60px 40px;
-  background-color: rgba(0,0,0,0);
-  /*background-color: #4397d8;
+  background-color: #4397d8;
+  color: #FFF;
   background-image: url('../images/bg.png');
   background-repeat: no-repeat;
-  background-size: cover;*/
+  background-size: cover;
 }
 
 .header-box .triangle {
@@ -114,11 +114,10 @@ body {
 .header-highlight{
   position: absolute;
   left:40px;
-  bottom: 20px;
-  font-size: 1.4em;
+  bottom: -6.5px;
+  font-size: 1.6em;
   padding: 0;
   color:rgba(255,255,255, 0.5);
-  visibility: hidden;
 }
 
 .menu-box {
@@ -197,7 +196,7 @@ body {
 }
 
 .default-box .title{
-  font-family: 'Galada';
+  font-family: 'Galada', cursive;
   /*font-family: 'Indie Flower', cursive;*/
   font-size: 1.8em;
   line-height: 0.8em;
@@ -226,20 +225,6 @@ body {
   font-size: 0.9em;
   display: block;
   text-align: justify;
-}
-
-.default-box .areas{
-  font-size: 0.9em;
-  display: none;
-  text-align: center;
-}
-
-.default-box .areas .areas-title{
-  /*font-family: 'Galada', cursive;
-  font-style: italic;*/
-  display: block;
-  color: #4397d8;
-  font-size: 1.5em;
 }
 
 .default-box + .default-box {
@@ -310,19 +295,9 @@ body {
 }
 
 .page-box{
-  background-color: white;
   position: relative;
-  margin: 0px;
-  padding: 40px;
-  padding-top:10px;
-  
-}
-
-.shadow-div {
-  box-shadow: 0px 0px 15px 0px rgba(50,50,50,0.5);
-  margin:0px;
-  padding:0px;
-
+  margin: 40px;
+  margin-top:10px;
 }
 
 .footer-box {
@@ -488,11 +463,6 @@ a .fa{
   font-size: 0.9em;
 }
 
-a {
-  text-decoration: none;
-  color: #4397d8;
-}
-
 .totop{
   position: fixed;
   bottom: 2em;
@@ -505,7 +475,7 @@ a {
 }
 
 .totop .fa{
-  color: #FFF;
+  color: #888;
   font-size: 1.2em;
   opacity: 0;
   transition: opacity 1s;
@@ -518,28 +488,9 @@ a {
 
 .grid-item {
   display: inline-block;
+  min-width: 75px;
   width: 12%;
   max-width: 150px;
-  vertical-align: middle;
-  height: inherit;
-  padding: 5px 0px 5px 0px;
-}
-
-.grid-item-2 {
-  display: inline-block;
-  min-width: 150px;
-  width: 30%;
-  max-width: 300px;
-  vertical-align: middle;
-  height: inherit;
-  padding: 5px 0px 5px 0px;
-}
-
-.grid-item-3 {
-  display: inline-block;
-  min-width: 70px;
-  width: 20%;
-  max-width: 200px;
   vertical-align: middle;
   height: inherit;
   padding: 5px 0px 5px 0px;
@@ -551,18 +502,16 @@ a {
 }
 
 .grid-item img{
-  width: 90%;
+  width: 85%;
   transition: 0.5s;
 }
 
-.grid-item-2 img{
-  width: 100%;
-  transition: 0.5s;
+.grid-item img:target{
+  display:block;
 }
 
-.grid-item-3 img{
-  width: 90%;
-  transition: 0.5s;
+.grid-item img:hover{
+  width:100%;
 }
 
 .grid-icon:hover {
