@@ -12,6 +12,7 @@
 }
 
 html {
+  background-color: #4397d8;
   background-image: url('../images/bg2b.png');
   background-repeat:repeat;
   background-size: 400px;
@@ -85,6 +86,18 @@ body {
 
 .top-bar .link{
   width: 1.8em;
+}
+
+.default-box .about-me:first-line {
+  float: left;
+  font-size: 1.4em;
+  font-style: italic;
+}
+
+.default-box table{
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .header-box {
@@ -226,6 +239,14 @@ body {
   font-size: 0.9em;
   display: block;
   text-align: justify;
+  width: 100%;
+}
+
+.default-box .half-boxes{
+  font-size: 0.9em;
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 .default-box .areas{
@@ -234,12 +255,28 @@ body {
   text-align: center;
 }
 
+.default-box .half-box {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 40%;
+  min-width: 200px;
+
+}
+
+.default-box .half-box h4{
+  margin-top: 25px;
+  margin-bottom: 4px;
+}
+
 .default-box .areas .areas-title{
   /*font-family: 'Galada', cursive;
   font-style: italic;*/
   display: block;
   color: #4397d8;
   font-size: 1.5em;
+  margin-top:10px;
+  margin-bottom:5px;
 }
 
 .default-box + .default-box {
@@ -334,13 +371,13 @@ body {
 
 .footer-box .name{
   font-family: 'Roboto Slab', serif;
-  font-size: 1em;
+  font-size: 1.2em;
   display: block;
 }
 
 .footer-box .description{
   font-family: 'Roboto Slab', serif;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight:300;
   display: block;
   margin-bottom: 15px;
@@ -354,7 +391,7 @@ body {
 }
 
 .footer-box .contacts{
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 .media-item-image img{
@@ -546,7 +583,7 @@ a {
 }
 
 .grid-icon {
-  font-size: 3em;
+  font-size: 3.5em;
   transition: 0.5s;
 }
 
@@ -566,7 +603,6 @@ a {
 }
 
 .grid-icon:hover {
-  font-size: 3.5em;
   color: #4397d8;
 }
 
