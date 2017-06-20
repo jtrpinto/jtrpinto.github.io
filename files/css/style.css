@@ -15,6 +15,7 @@ html {
   background-color: #222;
   background-image: url('../images/bkg3.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   color: #333;
   /*font-family: 'Cabin', sans-serif;*/
@@ -75,7 +76,7 @@ body {
 .top-bar .name {
   float: left;
   margin-left: 20px;
-  font-family: 'Bitter', serif;
+  font-family: 'Arvo', serif;
   font-size: 1.6em;
 }
 
@@ -102,9 +103,9 @@ body {
 
 .header-box {
   position: relative;
-  font-family: 'Bitter', serif;
+  font-family: 'Arvo', serif;
   color: #FFF;
-  padding: 40px 40px 60px 40px;
+  padding: 40px 40px 75px 40px;
   background-color: rgba(0,0,0,0);
   /*background-color: #4397d8;
   background-image: url('../images/bg.png');
@@ -120,8 +121,8 @@ body {
 }
 
 .header-box .name{
-  font-size: 2.8em;
-  line-height: 1em;
+  font-size: 2.6em;
+  line-height: 1.0em;
 }
 
 .header-highlight{
@@ -372,13 +373,13 @@ body {
 }
 
 .footer-box .name{
-  font-family: 'Bitter', serif;
+  font-family: 'Arvo', serif;
   font-size: 1.2em;
   display: block;
 }
 
 .footer-box .description{
-  font-family: 'Bitter', serif;
+  font-family: 'Arvo', serif;
   font-size: 0.8em;
   font-weight:300;
   display: block;
