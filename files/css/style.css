@@ -445,7 +445,7 @@ body {
 }
 
 .media-item-description{
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-style: italic;
   color: #888;
   display: block;
@@ -531,6 +531,7 @@ button.accordion.active, button.accordion:hover {
 /* Style the accordion panel. Note: hidden by default */
 div.panel {
   padding: 0px 10px;
+  margin-bottom:10px;
   background-color: white;
   max-height: 0px;
   overflow: hidden;
