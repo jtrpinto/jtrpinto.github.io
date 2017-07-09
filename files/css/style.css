@@ -291,12 +291,17 @@ body {
 
 .slider {
   text-align: center;
+  padding-top: 0px;
 }
 
 .slider-slide {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-bottom:10px;
+  margin-left:-40px;
+  margin-right:-40px;
+  background-size: cover;
+  background-position: center;
   /*border-style: solid;*/
 }
 
@@ -349,6 +354,7 @@ body {
 }
 
 .slider .slider-text .slider-description{
+  display: none;
   margin-top: 10px;
   font-style: italic;
   color: #888;
