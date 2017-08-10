@@ -406,7 +406,9 @@ body {
 }
 
 .footer-box .contacts{
+  display: block;
   font-size: 0.8em;
+  color: #AAA;
 }
 
 .media-item-image img{
@@ -628,6 +630,17 @@ a {
 
 .grid-icon:hover {
   color: #4397d8;
+}
+
+.footer-box .social-links{
+  display: block;
+  margin-top: 15px;
+}
+
+.footer-box .social-links a .fa,
+.footer-box .social-links a .ai {
+  font-size: 1.4em;
+  color: #DDD !important;
 }
 
 @media (max-width: 60em) {
