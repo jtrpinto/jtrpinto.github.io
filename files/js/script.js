@@ -16,18 +16,17 @@ function wait(ms){
 }
 
 function handleMenuBox(){
-  if (document.getElementById('menu-box-inner').style.display == "block"){
-    document.getElementById('menu-box-inner').style.display = "none";
+  if (document.getElementById('menu-box-inner-links').style.display == "block"){
+    document.getElementById('menu-box-inner-links').style.display = "none";
   } else {
-    document.getElementById('menu-box-inner').style.display = "block";
+    document.getElementById('menu-box-inner-links').style.display = "block";
   }
-
 }
 
 function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 300;
+            shrinkOn = 100;
         if (distanceY > shrinkOn) {
             document.getElementById('top-bar').style.visibility = 'visible';
             document.getElementById('top-bar').style.opacity = 1;

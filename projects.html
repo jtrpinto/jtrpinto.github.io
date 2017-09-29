@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width"/>
   <link href="https://fonts.googleapis.com/css?family=Arvo|Galada|Inder" rel="stylesheet">
   <link rel="stylesheet" href="files/academicons-1.8.0/css/academicons.css"/>
-  <link rel="stylesheet" type="text/css" href="files/css/style_2.css">
+  <link rel="stylesheet" type="text/css" href="files/css/style_3.css">
   <script src="https://use.fontawesome.com/9f7b30ab12.js"></script>
 </head>
 
@@ -25,46 +25,57 @@
     <span id="top-bar-name-big" class="name">JOÃO RIBEIRO PINTO</span>
     <span id="top-bar-name-small" class="name">JRP</span>
     <span class="links">
-      <a href="index.html" title="About"><img class="link" src="files/images/about.png"></a>
-      <a href="education.html" title="Education"><img class="link" src="files/images/education.png"></a>
-      <a href="skills.html" title="Skills"><img class="link" src="files/images/skills.png"></a>
-      <a href="activity.html" title="Activity"><img class="link" src="files/images/activity.png"></a>
-      <a href="projects.html" title="Projects"><img class="link" src="files/images/projects.png"></a>
-      <a href="#contact" title="Contact"><img class="link" src="files/images/contact.png"></a>
-      <a href="cv.html" title="CV"><img class="link" src="files/images/cv.png"></a>
+      <a onclick="handleMenuBox();"><i class="fa fa-bars" aria-hidden="true"></i></a>
     </span>
   </div>
 
-<div class="shadow-div">
-  <div class="menu-box">
-    <div id="menu-box-inner" class="menu-box-inner">
+<div class="slide-menu">
+  <div id="menu-box-inner" class="menu-box-inner">
+      <div id="menu-box-handle" class="menu-box-handle">
+        <a onclick="handleMenuBox();"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      </div>
       <ul id="menu-box-inner-links">
         <li><a href="index.html" title="About">About</a></li>
         <li><a href="education.html" title="Education">Education</a></li>
         <li><a href="skills.html" title="Skills">Skills</a></li>
         <li><a href="activity.html" title="Activity">Activity</a></li>
         <li><a href="projects.html" title="Projects">Projects</a></li>
+        <li><a href="publications.html" title="Publications">Publications</a></li>
         <li><a href="#contact" title="Contact">Contact</a></li>
         <li><a href="cv.html" title="CV">CV</a></li>
       </ul>
-      <ul id="menu-box-inner-icons">
-        <li><a href="index.html" title="About"><img class="menu-link" src="files/images/about2.png"></a></li>
-        <li><a href="education.html" title="Education"><img class="menu-link" src="files/images/education2.png"></a></li>
-        <li><a href="skills.html" title="Skills"><img class="menu-link" src="files/images/skills2.png"></a></li>
-        <li><a href="activity.html" title="Activity"><img class="menu-link" src="files/images/activity2.png"></a></li>
-        <li><a href="projects.html" title="Projects"><img class="menu-link" src="files/images/projects2.png"></a></li>
-        <li><a href="#contact" title="Contact"><img class="menu-link" src="files/images/contact2.png"></a></li>
-        <li><a href="cv.html" title="CV"><img class="menu-link" src="files/images/cv2.png"></a></li>
-      </ul>
     </div>
-  </div>
+</div>
+
+<div class="shadow-div">
 
   <div class="page-box">
     <div class="default-box">
       <span class="title">My Projects</span>
       <div class="text">
         <div class="subtitle">In Progress</div>
-		<button class="accordion">
+		   
+       <button class="accordion">
+          <div class="item-list-text">Biometric Recognition and Fatigue Monitoring in Driving Settings
+	        </div>
+          <div class="item-list-date">2017</div>
+        </button>
+        <div class="panel">
+          <div class="media-item">
+            <div class="media-item-image"><img src="files/images/logo_FEUP.png"></div>
+            <div class="media-item-text">
+              <span class="media-item-info">
+                Authors: J.R.Pinto<br>
+                Supervisor: J.S.Cardoso<br>
+                Date: since Aug. 2017</span>
+              <span class="media-item-description">N.A.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtitle">Concluded</div>
+
+         <button class="accordion">
           <div class="item-list-text">Personalised Medicine: Redefining Cancer Treatment</div>
           <div class="item-list-date">2017</div>
           </button>
@@ -74,7 +85,7 @@
             <div class="media-item-text">
               <span class="media-item-info">
                 Authors: J.R.Pinto<br>
-                Date: since July 2017</span>
+                Date: July - Aug. 2017</span>
               <span class="media-item-description">
 			  Competition focusing on the classification of nine genetic mutation variants,
 			  given information on genes and variations, manually annotated by clinicians. Genes and Variations are categorical variables with, respectively, 1507 and 8609
@@ -87,7 +98,6 @@
           </div>
         </div>
 
-        <div class="subtitle">Concluded</div>
         <button class="accordion">
           <div class="item-list-text">Continuous Biometric Identification on the Steering Wheel
 		<i class="fa fa-file-text-o" aria-hidden="true" title="Published work"></i>
@@ -493,38 +503,6 @@
           </div>
         </div>
               
-      </div>
-    </div>
-
-    <div id="publications" class="default-box">
-      <span class="title">Publications</span>
-      <div class="text">
-        <ul class="item-list">
-	  <li>
-            <div class="item-list-text">
-              <span class="item-list-title">
-                Towards a Continuous Biometric System Based on ECG Signals Acquired on the Steering Wheel
-              </span><br>
-              <span class="item-list-description">
-                JR Pinto, JS Cardoso, A Lourenço, and C Carreiras<br>
-		Sensors 17(10), doi: <a href="http://www.mdpi.com/1424-8220/17/10/2228">10.3390/s17102228 <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
-              </span>
-            </div>
-            <div class="item-list-date">Sep. 2017</div>
-          </li>
-          <li>
-            <div class="item-list-text">
-              <span class="item-list-title">
-                A versatile method for bladder segmentation in computed tomography two-dimensional images under adverse conditions
-              </span><br>
-              <span class="item-list-description">
-                JR Pinto and JMRS Tavares<br>
-		Proc IMechE Part H: J Engineering in Medicine 231(9), doi: <a href="https://doi.org/10.1177/0954411917714294">10.1177/0954411917714294 <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
-              </span>
-            </div>
-            <div class="item-list-date">June 2017</div>
-          </li>
-        </ul>
       </div>
     </div>
 

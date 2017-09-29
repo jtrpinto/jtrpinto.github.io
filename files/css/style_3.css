@@ -176,7 +176,7 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 5px 8px 5px 8px;
-  border-radius: 8px;
+  border-radius: 0;
   transition: 0.5s;
 }
 
@@ -344,7 +344,7 @@ body {
   color: #333;
   font-size: 1em;
   padding: 3px 8px 3px 8px;
-  border-radius: 8px;
+  border-radius: 0;
   transition: 0.5s;
 }
 
@@ -496,7 +496,7 @@ body {
 
 .item-list li{
   padding:7px;
-  border-radius: 10px;
+  border-radius: 0;
   transition: 0.5s;
 }
 .item-list li:hover{
@@ -537,7 +537,7 @@ button.accordion {
     transition: 0.5s;
     background-color: #fff;
     padding:7px;
-    border-radius: 10px;
+    border-radius: 0;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
