@@ -584,10 +584,11 @@ a {
 #totop-a {
   visibility: hidden;
   transition: visibility 1s;
+  text-shadow: 1px 1px 5px #555;
 }
 
 .totop .fa{
-  color: #FFF;
+  color: #333;
   font-size: 1.2em;
   opacity: 0;
   transition: opacity 1s;
