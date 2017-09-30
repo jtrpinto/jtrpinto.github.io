@@ -65,6 +65,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s;
+  box-shadow: 0px 0px 10px 0px #555;
 }
 
 .top-bar .triangle {
@@ -84,6 +85,7 @@ body {
 .top-bar .links{
   float:right;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .top-bar .links .fa{
@@ -150,10 +152,7 @@ body {
   top:2.5em;
   right:0;
   z-index:1001;
-}
-
-.slide-menu .fa{
-  
+  box-shadow: 0px 0px 10px 0px #555;
 }
 
 .menu-box {
@@ -173,6 +172,7 @@ body {
 
 .menu-box-inner li {
   padding: 8px 20px 8px 8px;
+  cursor: pointer;
 }
 
 #menu-box-inner-links a {
@@ -209,6 +209,7 @@ body {
   background-color:#4397d8;
   padding: 10px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .menu-box-handle .fa{
