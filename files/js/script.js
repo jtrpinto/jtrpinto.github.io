@@ -26,7 +26,7 @@ function handleMenuBox(){
 function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 100;
+            shrinkOn = 75;
         if (distanceY > shrinkOn) {
             document.getElementById('top-bar').style.visibility = 'visible';
             document.getElementById('top-bar').style.opacity = 1;
