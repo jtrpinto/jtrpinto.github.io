@@ -1,5 +1,5 @@
 html {
-    min-width: 35em;
+    min-width: 25em;
     font-family: 'Inder', sans-serif;
     border-bottom: solid;
     border-bottom-width: 5px;
@@ -293,3 +293,8 @@ body {
     .name-area .name {font-size: 1.8em;}
     .page-content, .page-links, .contact, .credits {margin-left: 0px;}
     .page-links {padding-top: 0;}
+}
+
+@media (max-width: 35em){
+    .media-item-image{display: none;}
+}
