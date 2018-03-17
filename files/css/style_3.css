@@ -12,8 +12,9 @@
 }
 
 html {
+  font-size: 0.9em;
   background-color: #999;
-  background-image: url('../images/bkg11.jpg');
+  background-image: url('../images/bkg_3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -65,7 +66,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s;
-  box-shadow: 0px 0px 10px 0px #555;
+  box-shadow: 0px 0px 3px 0px #777;
 }
 
 .top-bar .triangle {
@@ -83,7 +84,7 @@ body {
 }
 
 .top-bar .links{
-  float:right;
+  float: right;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -98,12 +99,6 @@ body {
   width: 1.8em;
 }
 
-.default-box .about-me:first-line {
-  float: left;
-  font-size: 1.4em;
-  font-style: italic;
-}
-
 .default-box table{
   width: 100%;
   max-width: 400px;
@@ -114,7 +109,7 @@ body {
   position: relative;
   font-family: 'Arvo', serif;
   color: #333;
-  text-shadow: 1px 1px 5px #555;
+  text-shadow: 0px 0px 3px #777;
   padding: 40px 40px 75px 40px;
   background-color: rgba(0,0,0,0);
   /*background-color: #4397d8;
@@ -128,8 +123,8 @@ body {
   margin-left: -30px;
   margin-top: -30px;
   width: 40px;
-  -webkit-filter: drop-shadow(1px 1px 5px #555);
-  filter: drop-shadow(1px 1px 5px #555);
+  -webkit-filter: drop-shadow(0px 0px 2px #555);
+  filter: drop-shadow(0px 0px 2px #555);
 }
 
 .header-box .name{
@@ -152,7 +147,7 @@ body {
   top:2.5em;
   right:0;
   z-index:1001;
-  box-shadow: 0px 0px 10px 0px #555;
+  box-shadow: 0px 0px 5px 0px #777;
 }
 
 .menu-box {
@@ -389,7 +384,7 @@ body {
 }
 
 .shadow-div {
-  box-shadow: 0px 0px 15px 0px #555;
+  box-shadow: 0px 0px 10px 0px #777;
   margin:0px;
   padding:0px;
   border-top-style: solid;
@@ -522,12 +517,22 @@ body {
 .item-list-description{
   color:#888;
   font-style: italic;
+  font-size: 0.9em;
 }
 
 .item-list-text{
   display: table-cell;
   text-align: left;
   width:100%;
+}
+
+.pub-category{
+  font-weight: bold;
+  display: block;
+}
+
+li + .pub-category{
+  margin-top: 20px;
 }
 
 button.accordion {
@@ -584,7 +589,7 @@ a {
 #totop-a {
   visibility: hidden;
   transition: visibility 1s;
-  text-shadow: 1px 1px 5px #555;
+  text-shadow: 0px 0px 3px #777;
 }
 
 .totop .fa{

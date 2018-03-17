@@ -21,6 +21,130 @@ body {
     background: rgba(67, 151, 216,0.2);
 }
 
+.button-links{
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  padding: 0px 5px 0px 5px;
+  margin: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+  text-align: right;
+  transition: 0.5s;
+}
+
+.button-links .fa{
+  color: #4397d8;
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+
+.button-links #button-links-inner {
+  list-style: none;
+  margin: 0px 0px 0px 5px;
+  padding: 0;
+  padding-bottom: 5px;
+  display: none;
+  transition: 0.5s;
+}
+
+#button-links-inner li {
+  padding: 5px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+#button-links-inner a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0;
+  transition: 0.5s;
+}
+
+#button-links-inner li:hover{
+  /*background-color: rgba(67, 151, 216, 0.1);*/
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+#button-links-inner li:hover a{
+  color: #4397d8;
+}
+
+.slider {
+  text-align: left;
+  padding-top: 0px;
+}
+
+.slider-slide {
+  padding-top: 0px;
+  padding-bottom: 40px;
+  margin-bottom:10px;
+  /*margin-left:-40px;
+  margin-right:-40px;*/
+  background-size: cover;
+  background-position: center;
+  /*border-style: solid;*/
+}
+
+.slider .slider-image{
+  display: block;
+  min-width: 100px;
+  max-width: 150px;
+  width: 15%;
+  margin: 0;
+  text-align: left;
+}
+
+.slider .slider-image img {
+  width: 85%;
+}
+
+.slider .slider-text{
+  display: block;
+  min-width: 0;
+  max-width: 90%;
+}
+
+.slider .slider-more a{
+  float:right;
+  top:8em;
+  text-decoration:none;
+  color: #333;
+  font-size: 1em;
+  padding: 3px 8px 3px 8px;
+  border-radius: 0;
+  transition: 0.5s;
+}
+
+.slider .slider-more .fa{
+  font-size: 0.7em;
+  color: inherit;
+}
+
+.slider .slider-more a:hover{
+  color: #4397d8;
+  background-color: rgba(67, 151, 216, 0.1);
+}
+
+.slider .slider-text .slider-title{
+  font-family: 'Galada', cursive;
+  font-style: italic;
+  display: block;
+  color: #4397d8;
+  font-size: 1.7em;
+}
+
+.slider .slider-text .slider-description{
+  display: none;
+  margin-top: 10px;
+  font-style: italic;
+  color: #888;
+  font-size: 0.9em;
+}
+
 .name-area {
     position: fixed;
     left: 0;
@@ -97,7 +221,7 @@ body {
 
 .page-content .content-title{
     display: block;
-    font-family: 'Arvo';
+    font-family: 'Galada';
     font-size: 1.5em;
     width: 75%;
     margin-bottom: 20px;
@@ -292,7 +416,7 @@ body {
 }
 
 .half-box h4{
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 4px;
 }
 
@@ -363,6 +487,25 @@ table{
   margin-top: 10px;
 }
 
+.totop{
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+}
+
+#totop-a {
+  visibility: hidden;
+  transition: visibility 1s;
+  text-shadow: 1px 1px 5px #555;
+}
+
+.totop .fa{
+  color: #333;
+  font-size: 1.2em;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
 @media (max-width: 60em){
   .page-content .content-title{width: 100%;}
 }
@@ -395,15 +538,19 @@ table{
       margin-top: 25px;
     }
     .name-area .inner{
-      margin-right: 50px;
+      margin-right: 25px;
+      margin-left: 25px;
       padding-bottom: 40px;
     }
-    .name-area .triangle-blue {width: 1.8em;}
+    .name-area .triangle-blue {width: 1.8em; left:25px;}
     .name-area .name {font-size: 1.8em;}
-    .page-content, .page-links, .contact, .credits {margin-left: 0px;}
-    .page-links {padding-top: 0;}
+    .page-content {padding-top: 0px;}
+    .page-content, .page-links, .contact, .credits {padding-left: 0px; margin-left:45px; margin-right: 45px;}
+    .page-links {display: none; /**padding: 0; margin-left: 45px; margin-right: 45px;**/}
+    .button-links {display: block;}
 }
 
 @media (max-width: 35em){
     .media-item-image{display: none;}
 }
+

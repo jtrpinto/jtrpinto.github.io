@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <!--<link rel="icon" href="files/images/jrp2.png">-->
   <title>João Ribeiro Pinto</title>
-  <!--<script language="JavaScript" src="files/js/script.js"></script>-->
+  <script language="JavaScript" src="files/js/script.js"></script>
   <meta name="viewport" content="width=device-width"/>
   <link href="https://fonts.googleapis.com/css?family=Arvo|Galada|Inder|Noto+Serif" rel="stylesheet">
   <link rel="stylesheet" href="files/academicons-1.8.0/css/academicons.css"/>
@@ -20,6 +20,19 @@
           <img class="triangle-white" src="files/images/whitetri.svg">
           <span class="name">JOÃO<br>RIBEIRO<br>PINTO</span>
       </div>
+      <span class="button-links" id="button-links">
+          <a onclick="handleMenuBox();"><i class="fa fa-bars" id="button-links-fa" aria-hidden="true"></i></a>
+          <ul id="button-links-inner">
+            <li><a href="index.html" title="home">home</a></li>
+            <li><a href="education.html" title="education">education</a></li>
+            <li><a href="skills.html" title="skills">skills</a></li>
+            <li><a href="experience.html" title="experience">experience</a></li>
+            <li><a href="projects.html" title="projects">projects</a></li>
+            <li><a href="publications.html" title="publications">publications</a></li>
+            <li><a href="#contact" title="contact">contact</a></li>
+            <li><a href="cv.html" title="cv">cv</a></li>
+          </ul>      
+      </span>
     </div>
 
     <div class='page-links'>
@@ -27,15 +40,115 @@
       <span class='link active'><a href="index.html">home </a></span> .
       <span class='link'><a href="education.html">education </a></span> .
       <span class='link'><a href="skills.html">skills </a></span> .
-      <span class='link'><a href="activity.html">activity </a></span> .
+      <span class='link'><a href="experience.html">experience </a></span> .
       <span class='link'><a href="projects.html">projects </a></span> .
       <span class='link'><a href="publications.html">publications </a></span> .
-      <span class='link'><a href="contact.html">contact </a></span> .
+      <span class='link'><a href="#contact">contact </a></span> .
       <span class='link'><a href="cv.html">cv </a></span>
     </div>
 
     <div class="page-content">
-      <span class="content-title">Hello!</span>
+      <div id="slider-fields" class="default-box slider">
+      <div class="slider-slide">
+        <div class="slider-image">
+          <img src="files/images/ml2.png">
+        </div>
+        <div class="slider-text">
+          <span class="slider-title">Machine Learning & Data Science</span>
+          <span class="slider-description">
+            - Supervised classification and regression;<br>
+            - Unsupervised clustering methods;<br>
+            - Data analysis and visualisation;<br>
+            - Prediction, pattern recognition, and modelling.
+          </span>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <div class="slider-image">
+          <img src="files/images/signal2.png">
+        </div>
+        <div class="slider-text">
+          <span class="slider-title">Signal Processing</span>
+          <span class="slider-description">
+            - Analogic and digital processing;<br>
+            - Methods for noise attenuation;<br>
+            - Extraction of relevant features;<br>
+            - Applications using machine learning.
+          </span>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <div class="slider-image">
+          <img src="files/images/ia2.png">
+        </div>
+        <div class="slider-text">
+          <span class="slider-title">Computer Vision</span>
+          <span class="slider-description">
+            - Image processing and analysis;<br>
+            - Noise filtering and quality enhancement;<br>
+            - Feature extraction and segmentation;<br>
+            - Pattern recognition and classification.
+          </span>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <div class="slider-image">
+          <img src="files/images/web2.png">
+        </div>
+        <div class="slider-text">
+          <span class="slider-title">Web Development</span>
+          <span class="slider-description">
+            - HTML, CSS, Sass, JavaScript, PHP;<br>
+            - Bootstrap framework and React.js;<br>
+            - Database design and SQL;<br>
+            - Experience with cPanel hosting management;<br>
+            - Experience with phpMyAdmin and PostgreSQL.
+          </span>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <div class="slider-image">
+          <img src="files/images/mobile2.png">
+        </div>
+        <div class="slider-text">
+          <span class="slider-title">Mobile Apps & UI Design</span>
+          <span class="slider-description">
+            - Design and development of Android apps;<br>
+            - Use of integrated and external sensors;<br>
+            - Design of GUI adapted for diverse purposes.
+          </span>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <div class="slider-image">
+          <img src="files/images/soft2.png">
+        </div>
+        <div class="slider-text">
+          <span class="slider-title">Software Engineering</span>
+          <span class="slider-description">
+            - Knowledge in data structure and algorithms;<br>
+            - UML modelling experience;<br>
+            - Agile development methods (Scrum);<br>
+            - Validation, verification, and software testing.
+          </span>
+        </div>
+      </div>
+      <div class="slider-slide">
+        <div class="slider-image">
+          <img src="files/images/elect2.png">
+        </div>
+        <div class="slider-text">
+          <span class="slider-title">Sensors & Electronics</span>
+          <span class="slider-description">
+            - Electronic circuits;<br>
+            - Integration of sensors, controllers, and actuators;<br>
+            - Signal acquisition and analogic processing.
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <span class="content-title">Welcome!</span>
       <span class="content-box">
         <i>My name is João and I recently completed my integrated masters
         (bachelor+master) degree in Bioengineering, in the field of Biomedical
@@ -45,7 +158,7 @@
         programming, software engineering and testing, management, and
         entrepreneurship.<br><br>
 
-        I am currently a MSc Research Fellow at at FEUP/INESC-TEC, and I focus
+        I am currently a MSc Research Fellow at FEUP and Collaborator at INESC TEC, where I work
         mainly in signal and image analysis, combined with machine learning for
         pattern recognition applications. After several projects focused on such
         technologies for the development and enhancement of medical diagnosis
@@ -77,6 +190,28 @@
       2017 JR Pinto. All rights reserved.<br>
       Background image adapted from 'Aerial Photo of Pine Trees' by Stephen Schillinger at Pexels, CC0.
     </div>
+
+    <div class="totop">
+      <a id="totop-a" href="#"><i id="totop" class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    </div>
+    
+    <script src="files/js/zenscroll-dist/zenscroll-min.js"></script>
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slider-slide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = 'block';
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+      }
+  </script>
 
 </body>
 
