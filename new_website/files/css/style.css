@@ -102,11 +102,16 @@ a {
     margin-top: -5px;
 }
 
-#navbar-links {
-    width: 100%;
+#navbar-links,
+#navbar-links-short {
     text-align: right;
     font-size: 1.1em;
     color: #ffffff99;
+}
+
+#navbar-links-short {
+    display: none;
+    font-size: 1.4em;
 }
 
 #navbar-links a {
@@ -119,9 +124,16 @@ a {
     color: #ffffffff;
 }
 
+@media(max-width: 900px) {
+    #navbar-links-short {
+        display: block;
+    }
+    #navbar-links {
+        display: none;
+    }
+}
+
 #jrp-logo {
-    width: 20%;
-    min-width: 100px;
     max-width: 200px;
 }
 
@@ -394,7 +406,7 @@ a {
 }
 
 .contact-right {
-    width: 100%;
+    width: calc(90% - 35px);
     text-align: right;
 }
 
@@ -413,13 +425,13 @@ a {
     padding-bottom: 15px;
 }
 
-#contact .links i {
-    padding: 0 5px;
+#contact .links i + i{
+    padding-left: 10px;
 }
 
 #contact .vcmi-inesc {
     margin-top: 30px;
-    width: 350px;
+    width: 300px;
 }
 
 #contact .aep-small {
@@ -443,6 +455,10 @@ a {
     #contact .contact-right {
         text-align: left;
         padding-left: 35px;
+    }
+
+    .contact-wrap {
+        padding-top: 30px;
     }
 }
 
