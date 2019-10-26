@@ -8,14 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo|Galada|Inder|Noto+Serif" rel="stylesheet">
     <!--<link rel="stylesheet" href="files/academicons-1.8.0/css/academicons.css"/>-->
     <link rel="stylesheet" type="text/css" href="files/css/style.css">
-    <script src="https://kit.fontawesome.com/feeb280771.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/feeb280771.js" crossorigin="anonymous"></script>-->
+    <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.7.2/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 </head>
 
 <body>
 
     <div id="navbar">
         <div class="navbar-wrap">
-            <a href="#"><img id="triangle" src="files/img/white_tri.svg"></img></a>
+            <img id="triangle" src="files/img/white_tri.svg"></img>
             <div id="navbar-links">
                 <a href="#about">about</a> /
                 <a href="#experience">experience</a> /
@@ -25,8 +26,17 @@
                 <a href="#cv">cv</a> /
                 <a href="#contact">contact</a>
             </div>
-            <div id="navbar-links-short" onclick="openMenu()">
+            <div id="navbar-links-short" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden">
+                <a href="#about" onclick="toggleMenu()">about</a> /<br>
+                <a href="#experience" onclick="toggleMenu()">experience</a> /<br>
+                <a href="#research" onclick="toggleMenu()">research</a> /<br>
+                <a href="#publications" onclick="toggleMenu()">publications</a> /<br>
+                <a href="#others" onclick="toggleMenu()">others</a> /<br>
+                <a href="#cv" onclick="toggleMenu()">cv</a> /<br>
+                <a href="#contact" onclick="toggleMenu()">contact</a> /
             </div>
         </div>
     </div>
