@@ -12,6 +12,16 @@ function toggleMenu() {
     }
 }
 
+function closeMenuOnScroll() {
+    if (document.getElementById('menu').className != 'hidden') {
+        document.getElementById('menu').classList.toggle('hidden');
+        if (window.scrollY <= 100) {
+            document.getElementById('navbar').style.background = '#ffffff00';
+            document.getElementById('triangle').style.opacity = 0;
+        }
+    }
+}
+
 function toggle_experience_timeline(){
     var arrayOfElements=document.getElementsByClassName('hidden-experience');
     var lengthOfArray=arrayOfElements.length;
