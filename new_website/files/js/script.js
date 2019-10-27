@@ -5,7 +5,7 @@ function toggleMenu() {
         document.getElementById('triangle').style.opacity = 0.6;
     } else {
         document.getElementById('menu').classList.toggle('hidden');
-        if (window.scrollY <= 100) {
+        if (window.scrollY <= 300) {
             document.getElementById('navbar').style.background = '#ffffff00';
             document.getElementById('triangle').style.opacity = 0;
         }
@@ -15,7 +15,7 @@ function toggleMenu() {
 function closeMenuOnScroll() {
     if (document.getElementById('menu').className != 'hidden') {
         document.getElementById('menu').classList.toggle('hidden');
-        if (window.scrollY <= 100) {
+        if (window.scrollY <= 300) {
             document.getElementById('navbar').style.background = '#ffffff00';
             document.getElementById('triangle').style.opacity = 0;
         }
@@ -54,7 +54,7 @@ function toggle_full_publications(){
 function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 100;
+            shrinkOn = 300;
         if (distanceY > shrinkOn) {
             document.getElementById('navbar').style.background = '#111111ee';
             document.getElementById('triangle').style.opacity = 0.6;
