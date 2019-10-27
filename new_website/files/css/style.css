@@ -625,7 +625,6 @@ li:hover .flag-title {
     margin: 4px 0 0 0;
     z-index: 14;
     line-height: 1em;
-    vertical-align: middle;
     color: #fff;
 }
 
