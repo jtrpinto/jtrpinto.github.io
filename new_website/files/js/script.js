@@ -1,7 +1,7 @@
 function toggleMenu() {
     if (document.getElementById('menu').className == 'hidden') {
         document.getElementById('menu').classList.toggle('hidden');
-        document.getElementById('navbar').style.background = '#111111dd';
+        document.getElementById('navbar').style.background = '#111111ee';
         document.getElementById('triangle').style.opacity = 0.6;
     } else {
         document.getElementById('menu').classList.toggle('hidden');
@@ -56,7 +56,7 @@ function init() {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
             shrinkOn = 100;
         if (distanceY > shrinkOn) {
-            document.getElementById('navbar').style.background = '#222222ee';
+            document.getElementById('navbar').style.background = '#111111ee';
             document.getElementById('triangle').style.opacity = 0.6;
             document.getElementById('totop-a').style.visibility = 'visible';
             document.getElementById('totop').style.opacity = 1;
