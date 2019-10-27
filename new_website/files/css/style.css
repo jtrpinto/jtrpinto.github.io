@@ -20,6 +20,7 @@ html {
     color: #111111;
     font-family: 'Inder', sans-serif;
     min-width: 30em;
+    -webkit-tap-highlight-color: #ffffff00;
 }
 
 ::selection {
@@ -44,6 +45,10 @@ p + p {
 
 a {
     text-decoration: none;
+}
+
+a:active {
+    background-color: none;
 }
 
 #menu {
@@ -85,9 +90,14 @@ a {
 }
 
 .header-message {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
     color: #ffffff;
     font-size: 2.5em;
-    font-family: sans-serif;
     font-weight: bold;
     text-align: center;
 }
