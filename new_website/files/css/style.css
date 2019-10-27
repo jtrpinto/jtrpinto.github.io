@@ -537,6 +537,7 @@ a {
     border-style: solid;
     border-color: #7b4cd2;
     border-radius: 10px;
+    border-width: 3px;
     z-index: 5;
     left: 0;
     right: 0;
