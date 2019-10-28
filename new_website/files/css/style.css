@@ -1,3 +1,5 @@
+/* purple #7b4cd2 */
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -24,11 +26,11 @@ html {
 }
 
 ::selection {
-    background: hsla(261, 60%, 75%, 40%); /* WebKit/Blink Browsers */
+    background: hsla(160, 30%, 50%, 40%); /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: hsla(261, 60%, 75%, 40%); /* Gecko Browsers */
+    background: hsla(160, 30%, 50%, 40%); /* Gecko Browsers */
 }
 
 body {
@@ -77,7 +79,8 @@ a:active {
 }
 
 .header-cover {
-    background: linear-gradient(135deg, hsla(301, 60%, 56%, 90%) 0%, hsla(261, 60%, 56%, 90%) 50%, hsla(221, 60%, 56%, 90%) 100%);
+    /*background: linear-gradient(135deg, hsla(301, 60%, 56%, 90%) 0%, hsla(261, 60%, 56%, 90%) 50%, hsla(221, 60%, 56%, 90%) 100%);*/
+    background: linear-gradient(135deg, hsl(80, 30%, 50%, 90%) 0%, hsl(160, 30%, 50%, 90%) 50%, hsl(240, 30%, 50%, 90%) 100%);
     width: 100%;
     height: 100%;
     padding: 0;
@@ -228,7 +231,7 @@ a:active {
 }
 
 #news a:hover {
-    color: #7b4cd2;
+    color: #59A68C;
 }
 
 #experience, #publications {
@@ -242,7 +245,8 @@ a:active {
 }
 
 #cv {
-    background: linear-gradient(135deg, hsl(301, 60%, 56%) 0%, hsl(261, 60%, 56%) 50%, hsl(221, 60%, 56%) 100%);
+    /*background: linear-gradient(135deg, hsl(301, 60%, 56%) 0%, hsl(261, 60%, 56%) 50%, hsl(221, 60%, 56%) 100%);*/
+    background: linear-gradient(135deg, hsl(80, 30%, 50%) 0%, hsl(160, 30%, 50%) 50%, hsl(240, 30%, 50%) 100%);
     width: 100%;
 }
 
@@ -273,7 +277,7 @@ a:active {
     display: block;
     padding: 0px 0px 10px 0px;
     font-size: 2em;
-    color: #7b4cd2;
+    color: #59A68C;
     text-align: center;
 }
 
@@ -296,7 +300,8 @@ a:active {
 #research {
     display: flex;
     width: 100%;
-    background: linear-gradient(135deg, hsl(301, 60%, 56%) 0%, hsl(261, 60%, 56%) 50%, hsl(221, 60%, 56%) 100%);
+    /*background: linear-gradient(135deg, hsl(301, 60%, 56%) 0%, hsl(261, 60%, 56%) 50%, hsl(221, 60%, 56%) 100%);*/
+    background: linear-gradient(135deg, hsl(80, 30%, 50%) 0%, hsl(160, 30%, 50%) 50%, hsl(240, 30%, 50%) 100%);
     position: relative;
 }
 
@@ -335,7 +340,7 @@ a:active {
 .publications-subtitle {
     display: block;
     width: 100%;
-    color: hsl(261, 30%, 70%);
+    color: hsl(160, 20%, 70%);
     text-align: center;
     font-size: 1.1em;
     margin: 15px 0 10px 0;
@@ -370,7 +375,7 @@ a:active {
 }
 
 #publications-main .paper:hover .paper-title{
-    color: #7b4cd2;
+    color: #59A68C;
 }
 
 #publications-main .paper + .paper {
@@ -390,7 +395,7 @@ a:active {
     width: 0;
     height: 0;
     font-size: 1.4em;
-    color: #7b4cd2;
+    color: #59A68C;
 }
 
 #publications-full > .publications-subtitle {
@@ -422,7 +427,7 @@ a:active {
 }
 
 #publications-full .paper:hover .paper-title{
-    color: #7b4cd2;
+    color: #59A68C;
 }
 
 #publications-full .paper + .paper {
@@ -444,17 +449,17 @@ a:active {
     height: 4.5em;
     border-radius: 4.5em;
     border-style: solid;
-    border-color: #888888;
+    border-color: hsl(160, 20%, 70%);
     border-width: 1px;
     margin: 0.5em;
     background-color: #ffffff;
     transition: 500ms;
-    color: #888888;
+    color: hsl(160, 30%, 50%);
 }
 
 .publication-stats-circle:hover {
-    background-color: #7b4cd2;
-    border-color: #7b4cd2;
+    background-color: #59A68C;
+    border-color: #59A68C;
     color: #ffffff;
 }
 
@@ -601,7 +606,7 @@ a:active {
     position: absolute;
     background: #ffffff;
     border-style: solid;
-    border-color: #7b4cd2;
+    border-color: #59A68C;
     border-radius: 10px;
     border-width: 3px;
     z-index: 5;
@@ -615,7 +620,7 @@ a:active {
 }
 
 li:hover .hexa {
-    background-color: #7b4cd2;
+    background-color: #59A68C;
 }
 
 .timeline .hexa-small {
@@ -635,7 +640,7 @@ li:hover .hexa {
 }
 
 li:hover .hexa-small {
-    background-color: #7b4cd2;
+    background-color: #59A68C;
 }
 
 .direction-l, .direction-r {
@@ -672,7 +677,7 @@ li:hover .hexa-small {
 }
 
 li:hover .flag-title {
-    color: #7b4cd2;
+    color: #59A68C;
 }
 
 .time-wrapper {
@@ -864,13 +869,13 @@ li:hover .flag-title {
 }
 
 .gray-button {
-    border-color: hsl(261, 30%, 70%);
-    color: hsl(261, 30%, 70%);
+    border-color: hsl(160, 20%, 70%);
+    color: hsl(160, 20%, 70%);
 }
 
 .gray-button:hover {
-    border-color: #7b4cd2;
-    background: #7b4cd2;
+    border-color: #59A68C;
+    background: #59A68C;
     color: #ffffff;
 }
 
@@ -881,15 +886,15 @@ li:hover .flag-title {
 
 .white-button:hover {
     background: #ffffff;
-    color: #7b4cd2;
+    color: #59A68C;
 }
 
 .color-button {
-    border-color: #7b4cd2;
-    color: #7b4cd2;
+    border-color: #59A68C;
+    color: #59A68C;
 }
 
 .color-button:hover {
-    background: #7b4cd2;
+    background: #59A68C;
     color: #ffffff;
 }
