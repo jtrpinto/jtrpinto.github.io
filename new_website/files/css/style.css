@@ -84,22 +84,26 @@ a:active {
 }
 
 .header-wrap {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    height: 90%;
+    position: absolute;
+    width: 100%;
+    min-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    top: calc(50% - 4em);
+    bottom: 50%;
     text-align: center;
 }
 
 #jrp-logo {
-    margin-top: 35%;
     width: 80%;
     max-width: 600px;
 }
 
 .header-message {
     display: block;
-    width: 100%;
+    width: 80%;
+    max-width: 600%;
+    margin: 0 auto;
     color: #ffffff;
     font-size: 1.6em;
     text-align: center;
