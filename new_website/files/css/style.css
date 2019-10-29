@@ -170,44 +170,201 @@ a:active {
     }
 }
 
-#about {
-    display: flex;
-    width: 100%;
-    background:  linear-gradient(135deg, #111111 0%, #222222 50%, #333333 100%);
+@media(min-width: 1000px) {
+    #about {
+        display: flex;
+        width: 100%;
+        background:  linear-gradient(135deg, #111111 0%, #222222 50%, #333333 100%);
+    }
+
+    .about-image {
+        flex: 0.5;
+        width: 50%;
+        min-height: 250px;
+        background: url('../img/me.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+        transition: 500ms;
+    }
+
+    .about-info {
+        flex: 0.45;
+        min-height: 250px;
+        max-width: 500px;
+        color: #ffffff;
+    }
+
+    .about-title {
+        display: block;
+        padding: 50px 0px 10px 50px;
+        font-size: 2em;
+    }
+
+    .about-text {
+        display: block;
+        font-size: 0.9em;
+        padding: 10px 0px 50px 50px;
+    }
+
+    #research {
+        display: flex;
+        width: 100%;
+        /*background: linear-gradient(135deg, hsl(301, 60%, 56%) 0%, hsl(261, 60%, 56%) 50%, hsl(221, 60%, 56%) 100%);*/
+        background: linear-gradient(135deg, hsl(166, 66%, 55%) 0%, hsl(206, 66%, 55%) 50%, hsl(246, 66%, 55%) 100%);
+        position: relative;
+    }
+    
+    .research-title-wrap {
+        flex: 0.5;
+        width: 50%;
+    }
+
+    .research-title-image {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: cover !important;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    .research-title {
+        position: absolute;
+        font-size: 2em;
+        color: #ffffff;
+        right: calc(50% + 50px);
+        margin-top: 50px;
+        z-index: 2;
+    }
+    
+    .research-info {
+        flex: 0.45;
+        min-height: 40em;
+        max-width: 500px;
+        color: #ffffff;
+    }
+
+    .research-text {
+        display: block;
+        position: absolute;
+        width: 40%;
+        max-width: 450px;
+        padding: 50px 0px 50px 50px;
+        opacity: 0;
+        transition: opacity 2s;
+    }
+
+    .research-subtitle {
+        font-size: 1.4em;
+    }
+
+    .research-arrows {
+        margin: 10px 0px 20px 0px;
+        color: #ffffffbb;
+    }
+
+    .research-arrows {
+        cursor: pointer;
+    }
+
+    .research-arrows .fas:hover {
+        color: #ffffffff;
+    }
+
+    .research-arrows .fas + .fas {
+        margin-left: 20px;
+    }
 }
 
-.about-image {
-    flex: 0.5;
-    width: 50%;
-    min-height: 250px;
-    background: url('../img/me.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
-    transition: 500ms;
+@media(max-width: 1000px) {
+    #about {
+        width: 100%;
+        background:  linear-gradient(135deg, #111111 0%, #222222 50%, #333333 100%);
+    }
+
+    .about-image {
+        width: 100%;
+        min-height: 250px;
+        background: url('../img/me.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+        transition: 500ms;
+    }
+
+    .about-info {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        color: #ffffff;
+    }
+
+    .about-title {
+        display: block;
+        text-align: center;
+        padding: 50px 0px 10px 0px;
+        font-size: 2em;
+    }
+
+    .about-text {
+        display: block;
+        font-size: 0.9em;
+        text-align: justify;
+        text-align-last: left;
+        padding: 10px 0px 50px 0px;
+    }
+
+    #research {
+        width: 100%;
+        /*background: linear-gradient(135deg, hsl(301, 60%, 56%) 0%, hsl(261, 60%, 56%) 50%, hsl(221, 60%, 56%) 100%);*/
+        background: linear-gradient(135deg, hsl(166, 66%, 55%) 0%, hsl(206, 66%, 55%) 50%, hsl(246, 66%, 55%) 100%);
+        position: relative;
+    }
+    
+    .research-title-wrap {
+        width: 100%;
+        min-height: 250px;
+        background: url('../img/ecg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    
+    .research-title {
+        position: absolute;
+        font-size: 2em;
+        color: #ffffff;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        opacity: 1;
+        z-index: 2;
+    }
+    
+    .research-info {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        color: #ffffff;
+    }
+    
+    .research-text {
+        display: block;
+        padding: 50px 0px 50px 0px;
+        text-align: justify;
+        text-align-last: left;
+    }
 }
 
-.about-image:hover {
-    opacity: 0.9;
-}
-
-.about-info {
-    flex: 0.45;
-    min-height: 250px;
-    max-width: 500px;
-    color: #ffffff;
-}
-
-.about-title {
-    display: block;
-    padding: 50px 0px 10px 50px;
-    font-size: 2em;
-}
-
-.about-text {
-    display: block;
-    padding: 10px 0px 50px 50px;
+#about .about-intro {
+    font-weight: bold;
+    color: hsl(206, 66%, 55%);
 }
 
 #news {
@@ -297,45 +454,7 @@ a:active {
     height: 0px;
 }
 
-#research {
-    display: flex;
-    width: 100%;
-    /*background: linear-gradient(135deg, hsl(301, 60%, 56%) 0%, hsl(261, 60%, 56%) 50%, hsl(221, 60%, 56%) 100%);*/
-    background: linear-gradient(135deg, hsl(166, 66%, 55%) 0%, hsl(206, 66%, 55%) 50%, hsl(246, 66%, 55%) 100%);
-    position: relative;
-}
 
-.research-title-wrap {
-    flex: 0.5;
-    width: 50%;
-    background: url('../img/ecg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.5;
-}
-
-.research-title {
-    position: absolute;
-    font-size: 2em;
-    color: #ffffff;
-    right: calc(50% + 50px);
-    margin-top: 50px;
-    opacity: 1;
-    z-index: 2;
-}
-
-.research-info {
-    flex: 0.45;
-    min-height: 250px;
-    max-width: 500px;
-    color: #ffffff;
-}
-
-.research-text {
-    display: block;
-    padding: 50px 0px 50px 50px;
-}
 
 .publications-subtitle {
     display: block;

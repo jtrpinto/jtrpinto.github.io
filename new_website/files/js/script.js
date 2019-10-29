@@ -1,3 +1,62 @@
+var researchTopic = 0;
+
+function initialResearchTopic() {
+    var researchTopics = document.getElementsByClassName('research-text');
+    var researchImages = document.getElementsByClassName('research-title-image'); 
+    var numResearchTopics = researchTopics.length;
+    for (var i = 0; i < numResearchTopics; i++){
+        if (i == 0){
+            researchTopics[i].style.opacity = 1;
+            researchImages[i].style.opacity = 0.5;
+        } else {
+            researchTopics[i].style.opacity = 0;
+            researchImages[i].style.opacity = 0;
+        }
+    }
+}
+
+function nextResearchTopic() {
+    var researchTopics = document.getElementsByClassName('research-text');
+    var researchImages = document.getElementsByClassName('research-title-image'); 
+    var numResearchTopics = researchTopics.length;
+    if (researchTopic == numResearchTopics - 1) {
+        next = 0;
+    } else {
+        next = researchTopic + 1;
+    }
+    for (var i = 0; i < numResearchTopics; i++){
+        if (i == next){
+            researchTopics[i].style.opacity = 1;
+            researchImages[i].style.opacity = 0.5;
+        } else {
+            researchTopics[i].style.opacity = 0;
+            researchImages[i].style.opacity = 0;
+        }
+    }
+    researchTopic = next;
+}
+
+function prevResearchTopic() {
+    var researchTopics = document.getElementsByClassName('research-text');
+    var researchImages = document.getElementsByClassName('research-title-image'); 
+    var numResearchTopics = researchTopics.length;
+    if (researchTopic == 0) {
+        prev = numResearchTopics - 1;
+    } else {
+        prev = researchTopic - 1;
+    }
+    for (var i = 0; i < numResearchTopics; i++){
+        if (i == prev){
+            researchTopics[i].style.opacity = 1;
+            researchImages[i].style.opacity = 0.5;
+        } else {
+            researchTopics[i].style.opacity = 0;
+            researchImages[i].style.opacity = 0;
+        }
+    }
+    researchTopic = prev;
+}
+
 function toggleMenu() {
     if (document.getElementById('menu').className == 'hidden') {
         document.getElementById('menu').classList.toggle('hidden');
@@ -70,3 +129,4 @@ function init() {
 }
 
 window.onload = init();
+initialResearchTopic();
