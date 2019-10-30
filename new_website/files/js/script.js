@@ -7,9 +7,11 @@ function initialResearchTopic() {
     for (var i = 0; i < numResearchTopics; i++){
         if (i == 0){
             researchTopics[i].style.opacity = 1;
+            researchTopics[i].style.zIndex = '2';
             researchImages[i].style.opacity = 0.5;
         } else {
             researchTopics[i].style.opacity = 0;
+            researchTopics[i].style.zIndex = '1';
             researchImages[i].style.opacity = 0;
         }
     }
@@ -27,9 +29,11 @@ function nextResearchTopic() {
     for (var i = 0; i < numResearchTopics; i++){
         if (i == next){
             researchTopics[i].style.opacity = 1;
+            researchTopics[i].style.zIndex = '2';
             researchImages[i].style.opacity = 0.5;
         } else {
             researchTopics[i].style.opacity = 0;
+            researchTopics[i].style.zIndex = '1';
             researchImages[i].style.opacity = 0;
         }
     }
@@ -48,9 +52,11 @@ function prevResearchTopic() {
     for (var i = 0; i < numResearchTopics; i++){
         if (i == prev){
             researchTopics[i].style.opacity = 1;
+            researchTopics[i].style.zIndex = '2';
             researchImages[i].style.opacity = 0.5;
         } else {
             researchTopics[i].style.opacity = 0;
+            researchTopics[i].style.zIndex = '1';
             researchImages[i].style.opacity = 0;
         }
     }
