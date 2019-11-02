@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width" />
     <link href="https://fonts.googleapis.com/css?family=Inder" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="files/css/style.css">
+    <link rel="stylesheet" type="text/css" href="files/css/circle.css">
+    <link rel="stylesheet" type="text/css" href="files/icomoon/style.css">
     <script
         type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.2/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 </head>
@@ -23,6 +26,7 @@
                 <a onclick="scrollToElement('research');">research</a> /
                 <a onclick="scrollToElement('publications');">publications</a> /
                 <a onclick="scrollToElement('activities');">activities</a> /
+                <a onclick="scrollToElement('skills');">skills</a> /
                 <a onclick="scrollToElement('cv');">cv</a> /
                 <a onclick="scrollToElement('contact');">contact</a>
             </div>
@@ -35,6 +39,7 @@
                 <a onclick="scrollToElement('research');">research</a> /<br>
                 <a onclick="scrollToElement('publications');">publications</a> /<br>
                 <a onclick="scrollToElement('activities');">activities</a> /<br>
+                <a onclick="scrollToElement('skills');">skills</a> /<br>
                 <a onclick="scrollToElement('cv');">cv</a> /<br>
                 <a onclick="scrollToElement('contact');">contact</a> /
             </div>
@@ -166,8 +171,7 @@
                             <div class="flag-wrapper">
                                 <span class="circle-small"></span>
                                 <div class="flag">
-                                    <span class="flag-description-small">Demo Chair at the 8th International Workshop on
-                                        Biometrics and Forensics (IWBF 2020)</span>
+                                    <span class="flag-description-small">Demo Chair at the IWBF 2020 international workshop</span>
                                 </div>
                             </div>
                             <div class="flag-wrapper">
@@ -180,6 +184,18 @@
                                 <span class="circle-small"></span>
                                 <div class="flag">
                                     <span class="flag-description-small">VCMI group logo redesign team</span>
+                                </div>
+                            </div>
+                            <div class="flag-wrapper">
+                                <span class="circle-small"></span>
+                                <div class="flag">
+                                    <span class="flag-description-small">Program Committee Member for MEDICON 2019 conference</span>
+                                </div>
+                            </div>
+                            <div class="flag-wrapper">
+                                <span class="circle-small"></span>
+                                <div class="flag">
+                                    <span class="flag-description-small">Special Session Co-Organiser for CIBB 2019 conference</span>
                                 </div>
                             </div>
                             <div class="flag-wrapper">
@@ -385,8 +401,8 @@
             <div class="research-text">
                 <span class="research-subtitle">Electrocardiogram</span>
                 <div class="research-arrows">
-                    <i onclick="prevResearchTopic();" class="fas fa-chevron-circle-left"></i><i
-                        onclick="nextResearchTopic();" class="fas fa-chevron-circle-right"></i>
+                    <i onclick="prevResearchTopic();" class="fas fa-chevron-circle-left"></i>
+                    <i onclick="nextResearchTopic();" class="fas fa-chevron-circle-right"></i>
                 </div>
                 <p>
                     <i class="fas fa-exclamation-triangle"></i> WORK IN PROGRESS <i class="fas fa-exclamation-triangle"></i>
@@ -395,8 +411,8 @@
             <div class="research-text">
                 <span class="research-subtitle">Biometrics</span>
                 <div class="research-arrows">
-                    <i onclick="prevResearchTopic();" class="fas fa-chevron-circle-left"></i><i
-                        onclick="nextResearchTopic();" class="fas fa-chevron-circle-right"></i>
+                    <i onclick="prevResearchTopic();" class="fas fa-chevron-circle-left"></i>
+                    <i onclick="nextResearchTopic();" class="fas fa-chevron-circle-right"></i>
                 </div>
                 <p>
                     <i class="fas fa-exclamation-triangle"></i> WORK IN PROGRESS <i class="fas fa-exclamation-triangle"></i>
@@ -405,8 +421,8 @@
             <div class="research-text">
                 <span class="research-subtitle">Machine Learning</span>
                 <div class="research-arrows">
-                    <i onclick="prevResearchTopic();" class="fas fa-chevron-circle-left"></i><i
-                        onclick="nextResearchTopic();" class="fas fa-chevron-circle-right"></i>
+                    <i onclick="prevResearchTopic();" class="fas fa-chevron-circle-left"></i>
+                    <i onclick="nextResearchTopic();" class="fas fa-chevron-circle-right"></i>
                 </div>
                 <p>
                     <i class="fas fa-exclamation-triangle"></i> WORK IN PROGRESS <i class="fas fa-exclamation-triangle"></i>
@@ -624,8 +640,7 @@
                 </div>
             </div>
             <div class="expand-button-wrap">
-                <span id="expand-button-publications" class="color-button" onclick="toggle_full_publications()">see full
-                    list</span>
+                <span id="expand-button-publications" class="color-button" onclick="toggle_full_publications()">see full list</span>
             </div>
         </div>
     </div>
@@ -636,6 +651,139 @@
             <p>
                 <i class="fas fa-exclamation-triangle"></i> WORK IN PROGRESS <i class="fas fa-exclamation-triangle"></i>
             </p>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="skills-wrap">
+            <span class="skills-title">skills</span>
+            <span class="skills-subtitle">Programming & others</span>
+            <!--
+                Python: numpy, scipy, scikit-learn, scikit-image, pandas, keras, pytorch
+                Matlab: including signal processing, image analysis, and machine learning tools
+                Web development: HTML5, CSS3, PHP, SQL
+                Documents: Microsoft Office, LaTeX
+                Design: Adobe Illustrator
+                Basic knowledge
+                C/C++: object-oriented programming
+                Java: including Android mobile application development
+                Web development: Javascript, Bootstrap, jQuery
+                LabVIEW: signal acquisition, processing, and control
+                Briefly used
+                R: for bioinformatics programming
+                Web development: ReactJS, AngularJS, Sass, C#, .NET
+            -->
+            <div class="circles-wrap">
+                <div title="Python" class="c100 p80 blue"><span>
+                    <i class="fab fa-python"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="MATLAB" class="c100 p75 blue"><span>
+                    <i class="icon-matlab"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+                
+                <div title="R" class="c100 p20 blue"><span>
+                    <i class="icon-r"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="C" class="c100 p50 blue"><span>
+                    <i class="devicon-c-plain"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="C++" class="c100 p50 blue"><span>
+                    <i class="devicon-cplusplus-plain"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="C#" class="c100 p40 blue"><span>
+                    <i class="devicon-csharp-plain"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="Java" class="c100 p50 blue"><span>
+                    <i class="devicon-java-plain-wordmark"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+                
+                <div title="Android" class="c100 p40 blue"><span>
+                    <i class="devicon-android-plain"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="HTML5" class="c100 p90 blue"><span>
+                    <i class="fab fa-html5"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="CSS3" class="c100 p90 blue"><span>
+                    <i class="fab fa-css3"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="PHP" class="c100 p70 blue"><span>
+                    <i class="fab fa-php"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="Javascript" class="c100 p60 blue"><span>
+                    <i class="fab fa-js"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="SQL" class="c100 p80 blue"><span>
+                    <i class="icon-sql"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="Bootstrap" class="c100 p60 blue"><span>
+                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="jQuery" class="c100 p30 blue"><span>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="ReactJS" class="c100 p20 blue"><span>
+                    <i class="devicon-react-plain-wordmark"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="AngularJS" class="c100 p20 blue"><span>
+                    <i class="devicon-angularjs-plain"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="Sass" class="c100 p30 blue"><span>
+                    <i class="devicon-sass-plain"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title=".NET" class="c100 p20 blue"><span>
+                    <i class="devicon-dot-net-plain-wordmark"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="LabVIEW" class="c100 p40 blue"><span>
+                    <i class="icon-labview"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="Microsoft Office" class="c100 p70 blue"><span>
+                    <i class="icon-office"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="LaTeX" class="c100 p70 blue"><span>
+                    <i class="icon-latex"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="Adobe Illustrator" class="c100 p80 blue"><span>
+                    <i class="devicon-illustrator-plain"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="Linux" class="c100 p60 blue"><span>
+                    <i class="devicon-linux-plain"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="Windows" class="c100 p60 blue"><span>
+                    <i class="devicon-windows8-original"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+            </div>
+            <span class="skills-subtitle">languages</span>
+            <div class="circles-wrap">
+                <div title="Portuguese" class="c100 p90 blue"><span>
+                    <i class="icon-portugal"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+
+                <div title="English" class="c100 p70 blue"><span>
+                    <i class="icon-uk"></i>
+                </span><div class="slice"><div class="bar"></div><div class="fill"></div></div></div>
+            </div>
         </div>
     </div>
 

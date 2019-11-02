@@ -66,7 +66,7 @@ a:active {
 
 #menu a {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 #header {
@@ -439,7 +439,7 @@ a:active {
 }
 
 #activities {
-    background: linear-gradient(135deg, #dddddd 0%, #eeeeee 50%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #eeeeee 50%, #dddddd 100%);
     width: 100%;
 }
 
@@ -468,7 +468,7 @@ a:active {
     width: 100%;
 }
 
-.experience-wrap, .publications-wrap, .activities-wrap, .cv-wrap, .contact-wrap {
+.experience-wrap, .publications-wrap, .activities-wrap, .cv-wrap, .contact-wrap, .skills-wrap {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
@@ -476,12 +476,17 @@ a:active {
     text-align: center;
 }
 
-.experience-title, .publications-title, .activities-title {
+.experience-title, .publications-title, .skills-title, .activities-title {
     display: block;
     padding: 0px 0px 10px 0px;
     font-size: 2em;
     color: hsl(206, 66%, 55%);
     text-align: center;
+}
+
+#skills .circles-wrap {
+    text-align: center;
+    margin-top: 15px;
 }
 
 .cv-title {
@@ -500,9 +505,7 @@ a:active {
     height: 0px;
 }
 
-
-
-.publications-subtitle {
+.publications-subtitle, .skills-subtitle {
     display: block;
     width: 100%;
     color: hsl(206, 46%, 75%);
