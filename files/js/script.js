@@ -25,8 +25,10 @@ function initialActivitySlide() {
     for (var i = 0; i < numActivitySlides; i++){
         if (i == 0){
             activitySlides[i].style.opacity = 1;
+            activitySlides[i].style.zIndex = '2';
         } else {
             activitySlides[i].style.opacity = 0;
+            activitySlides[i].style.zIndex = '1';
         }
     }
 }
@@ -64,8 +66,10 @@ function nextActivitySlide() {
     for (var i = 0; i < numActivitySlides; i++){
         if (i == next){
             activitySlides[i].style.opacity = 1;
+            activitySlides[i].style.zIndex = '2';
         } else {
             activitySlides[i].style.opacity = 0;
+            activitySlides[i].style.zIndex = '1';
         }
     }
     currentActivitySlide = next;
@@ -105,8 +109,10 @@ function prevActivitySlide() {
     for (var i = 0; i < numActivitySlides; i++){
         if (i == prev){
             activitySlides[i].style.opacity = 1;
+            activitySlides[i].style.zIndex = '2';
         } else {
             activitySlides[i].style.opacity = 0;
+            activitySlides[i].style.zIndex = '1';
         }
     }
     currentActivitySlide = prev;
