@@ -1,7 +1,9 @@
-// Randomly generates a colour and paints the website
+// Randomly selects a colour and paints the website
+var possibleHues = [30, 90, 150, 210, 270, 330];
 
 function initColour() {
-    var hue = Math.random()*360;
+    var index = Math.floor(Math.random()*6);
+    var hue = possibleHues[index];
     var min_hue = hue - 40;
     if (min_hue < 0) {
         min_hue = 360 - min_hue;
@@ -46,4 +48,12 @@ function initColour() {
     style.sheet.insertRule('.c100.blue .bar, .c100.blue .fill {border-color: ' + weak_colour + ' !important;');
     style.sheet.insertRule('.c100.blue:hover > span > i {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.c100.blue:hover .bar, .c100.blue:hover .fill {border-color: ' + strong_colour + ' !important;}');
+    style.sheet.insertRule('::selection {background: hsla(' + hue + ', 66%, 35%, 20%);}');
+
+    // Changing favicon
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'files/img/favicon_' + hue + '.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
 }

@@ -35,6 +35,7 @@ function initialActivitySlide() {
 
 function nextResearchTopic() {
     var researchTopics = document.getElementsByClassName('research-text');
+    var researchImages = document.getElementsByClassName('research-title-image'); 
     var numResearchTopics = researchTopics.length;
     if (currentResearchTopic == numResearchTopics - 1) {
         next = 0;
