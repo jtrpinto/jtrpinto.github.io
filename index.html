@@ -16,7 +16,7 @@
         type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.11.2/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 </head>
 
-<body onscroll="closeMenuOnScroll();" onresize="fitResearchSize();">
+<body onscroll="closeMenuOnScroll();" onresize="fitResearchSize(); fitActivitySize();">
 
     <div id="navbar">
         <div class="navbar-wrap">
@@ -26,7 +26,7 @@
                 <a onclick="scrollToElement('experience');">experience</a> /
                 <a onclick="scrollToElement('research');">research</a> /
                 <a onclick="scrollToElement('publications');">publications</a> /
-                <a onclick="scrollToElement('activities');">activities</a> /
+                <a onclick="scrollToElement('activity');">activity</a> /
                 <a onclick="scrollToElement('skills');">skills</a> /
                 <a onclick="scrollToElement('cv');">cv</a> /
                 <a onclick="scrollToElement('contact');">contact</a>
@@ -39,7 +39,7 @@
                 <a onclick="scrollToElement('experience');">experience</a> /<br>
                 <a onclick="scrollToElement('research');">research</a> /<br>
                 <a onclick="scrollToElement('publications');">publications</a> /<br>
-                <a onclick="scrollToElement('activities');">activities</a> /<br>
+                <a onclick="scrollToElement('activity');">activity</a> /<br>
                 <a onclick="scrollToElement('skills');">skills</a> /<br>
                 <a onclick="scrollToElement('cv');">cv</a> /<br>
                 <a onclick="scrollToElement('contact');">contact</a> /
@@ -646,12 +646,31 @@
         </div>
     </div>
 
-    <div id="activities">
-        <div class="activities-wrap">
-            <span class="activities-title">activities</span>
-            <p>
-                <i class="fas fa-exclamation-triangle"></i> WORK IN PROGRESS <i class="fas fa-exclamation-triangle"></i>
-            </p>
+    <div id="activity">
+        <div id="activity-wrap">
+            <span id="activity-title">activity</span>
+            <div class="activity-arrows">
+                <i onclick="prevActivitySlide();" class="arrow-left fas fa-chevron-left"></i>
+                <i onclick="nextActivitySlide();" class="arrow-right fas fa-chevron-right"></i>
+            </div>
+            <div class="activity-slide">
+                <span class="activity-subtitle">supervised students</span>
+                <p>
+                    <i class="fas fa-exclamation-triangle"></i> WORK IN PROGRESS <i class="fas fa-exclamation-triangle"></i>
+                </p>
+            </div>
+            <div class="activity-slide">
+                <span class="activity-subtitle">professional societies</span>
+                <p>
+                    <i class="fas fa-exclamation-triangle"></i> WORK IN PROGRESS <i class="fas fa-exclamation-triangle"></i>
+                </p>
+            </div>
+            <div class="activity-slide">
+                <span class="activity-subtitle">conferences, workshops, & symposia</span>
+                <p>
+                    <i class="fas fa-exclamation-triangle"></i> WORK IN PROGRESS <i class="fas fa-exclamation-triangle"></i>
+                </p>
+            </div>
         </div>
     </div>
 
@@ -832,6 +851,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script language="JavaScript" src="files/js/script.js"></script>
-<script>setTimeout(fitResearchSize, 2000);</script>
+<script>setTimeout(fitResearchSize, 2000); setTimeout(fitActivitySize, 2000);</script>
 
 </html>

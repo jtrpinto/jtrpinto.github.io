@@ -438,10 +438,60 @@ a:active {
     width: 100%;
 }
 
-#activities {
+#activity {
     background: linear-gradient(135deg, #ffffff 0%, #eeeeee 50%, #dddddd 100%);
     width: 100%;
+    position: relative;
 }
+
+.activity-slide {
+    display: block;
+    position: absolute;
+    width: calc(90% - 50px);
+    max-width: 950px;
+    padding: 10px 25px 0px 25px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s;
+    z-index: 1;
+}
+
+.activity-subtitle {
+    display: block;
+    width: 100%;
+    color: hsl(206, 0%, 50%);
+    text-align: center;
+    font-size: 1.1em;
+    margin: 15px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.activity-arrows {
+    position: absolute;
+    width: 90%;
+    max-width: 1000px;
+    padding-top: 30px;
+    z-index: 2;
+}
+
+.activity-arrows .fas {
+    color: hsl(206, 0%, 50%);
+    transition: color 500ms;
+}
+
+.activity-arrows .fas:hover {
+    color: hsl(206, 66%, 55%);
+}
+
+.activity-arrows .arrow-left {
+    float: left;
+    cursor: pointer;
+} 
+
+.activity-arrows .arrow-right {
+    float: right;
+    cursor: pointer;
+} 
 
 #cv {
     /*background: linear-gradient(135deg, hsl(301, 60%, 56%) 0%, hsl(261, 60%, 56%) 50%, hsl(221, 60%, 56%) 100%);*/
@@ -468,7 +518,7 @@ a:active {
     width: 100%;
 }
 
-.experience-wrap, .publications-wrap, .activities-wrap, .cv-wrap, .contact-wrap, .skills-wrap {
+.experience-wrap, .publications-wrap, #activity-wrap, .cv-wrap, .contact-wrap, .skills-wrap {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
@@ -476,7 +526,7 @@ a:active {
     text-align: center;
 }
 
-.experience-title, .publications-title, .skills-title, .activities-title {
+.experience-title, .publications-title, .skills-title, #activity-title {
     display: block;
     padding: 0px 0px 10px 0px;
     font-size: 2em;
