@@ -1,22 +1,47 @@
 // Randomly selects a colour and paints the website
-var possibleHues = [30, 90, 150, 210, 270, 330];
+// var possibleHues = [30, 90, 150, 210, 270, 330];
+var possibleHues = [0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345];
+var numHues = possibleHues.length;
+var currentHueIdx = 0;
 
-function initColour() {
-    var index = Math.floor(Math.random()*6);
-    var hue = possibleHues[index];
+var strong_saturation = '90%';
+var strong_lightness = '40%';
+var weak_saturation = '40%';
+var weak_lightness = '70%';
+var gradient_transparent_alpha = '0.9';
+
+
+function computeColours(hue) {
     var min_hue = hue - 40;
     if (min_hue < 0) {
-        min_hue = 360 - min_hue;
+        min_hue = 360 + min_hue;
     }
     var max_hue = hue + 40;
     if (max_hue > 360) {
         max_hue = 0 + (max_hue - 360);
     }
 
-    var strong_colour = 'hsl(' + hue + ', 66%, 55%)';
-    var weak_colour = 'hsl(' + hue + ', 46%, 75%)';
-    var gradient_opaque = 'linear-gradient(135deg, hsl(' + min_hue + ', 66%, 55%) 0%, hsl(' + hue + ', 66%, 55%) 50%, hsl('+ max_hue + ', 66%, 55%) 100%)';
-    var gradient_transparent = 'linear-gradient(135deg, hsla(' + min_hue + ', 66%, 55%, 0.9) 0%, hsla(' + hue + ', 66%, 55%, 0.9) 50%, hsla('+ max_hue + ', 66%, 55%, 0.9) 100%)';
+    var strong_colour = 'hsl(' + hue + ', ' + strong_saturation + ', ' + strong_lightness + ')';
+    var weak_colour = 'hsl(' + hue + ', ' + weak_saturation + ', ' + weak_lightness + ')';
+
+    var min_colour = 'hsl(' + min_hue + ', ' + strong_saturation + ', ' + strong_lightness + ')';
+    var max_colour = 'hsl(' + max_hue + ', ' + strong_saturation + ', ' + strong_lightness + ')';
+    var strong_colour_hsla = 'hsla(' + hue + ', ' + strong_saturation + ', ' + strong_lightness + ', ' + gradient_transparent_alpha + ')';
+    var min_colour_hsla = 'hsla(' + min_hue + ', ' + strong_saturation + ', ' + strong_lightness + ', ' + gradient_transparent_alpha + ')';
+    var max_colour_hsla = 'hsla(' + max_hue + ', ' + strong_saturation + ', ' + strong_lightness + ', ' + gradient_transparent_alpha + ')';
+
+    var gradient_opaque = 'linear-gradient(135deg, ' + min_colour + ' 0%, ' + strong_colour + ' 50%, '+ max_colour + ' 100%)';
+    var gradient_transparent = 'linear-gradient(135deg, ' + min_colour_hsla + ' 0%, ' + strong_colour_hsla + ' 50%, '+ max_colour_hsla + ' 100%)';
+    
+    return [hue, strong_colour, weak_colour, gradient_opaque, gradient_transparent];
+}
+
+function setColours(colours) {
+    hue = colours[0];
+    strong_colour = colours[1];
+    weak_colour = colours[2];
+    gradient_opaque = colours[3];
+    gradient_transparent = colours[4];
 
     var style = document.createElement('style');
     document.head.appendChild(style);
@@ -54,6 +79,28 @@ function initColour() {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'shortcut icon';
-    link.href = 'files/img/favicon_' + hue + '.png';
+    link.href = 'files/img/favicons/favicon_' + hue + '.png';
     document.getElementsByTagName('head')[0].appendChild(link);
+}
+
+function nextColour() {
+    if (currentHueIdx == numHues - 1) {
+        var index = 0;
+    } else {
+        var index = currentHueIdx + 1;
+    }
+    var hue = possibleHues[index];
+    currentHueIdx = index;
+    
+    colours = computeColours(hue);
+    setColours(colours);
+}
+
+function initColour() {
+    var index = Math.floor(Math.random()*numHues);
+    var hue = possibleHues[index];
+    currentHueIdx = index;
+    
+    colours = computeColours(hue);
+    setColours(colours);
 }
