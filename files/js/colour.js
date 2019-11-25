@@ -63,7 +63,7 @@ function setColours(colours) {
     style.sheet.insertRule('.white-button:hover {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.color-button {border-color: ' + strong_colour + '; color: ' + strong_colour + ';}');
     style.sheet.insertRule('.color-button:hover {background: ' + strong_colour + ';');
-    style.sheet.insertRule('#about .about-intro {color: ' + strong_colour + ';}');
+    style.sheet.insertRule('#about .about-intro {color: ' + weak_colour + ';}');
     style.sheet.insertRule('#news a:hover {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.activity-arrows .fas:hover {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.experience-title, .publications-title, .skills-title, #activity-title {color: ' + strong_colour + ';}');
