@@ -36,6 +36,7 @@ html {
 
 body {
     margin: 0;
+    background-color: rgb(20,20,20);
 }
 
 p {
@@ -527,6 +528,10 @@ a:active {
     font-size: 2em;
     color: hsl(206, 66%, 55%);
     text-align: center;
+}
+
+#skills {
+    background-color: #ffffff;    
 }
 
 #skills .circles-wrap {
