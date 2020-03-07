@@ -405,6 +405,12 @@ a:active {
     color: hsl(206, 46%, 75%);
 }
 
+.news-item {
+    display: block;
+    color: white;
+    margin-bottom: 1.5em;
+}
+
 #news {
     width: 100%;
     background: linear-gradient(135deg, #dddddd 0%, #eeeeee 50%, #ffffff 100%);
