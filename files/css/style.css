@@ -608,6 +608,10 @@ a:active {
     margin-top: 15px;
 }
 
+#activity .activity-item-short + .activity-item-short {
+    margin-top: 5px;
+}
+
 .activity-subsubtitle {
     display: block;
     margin-bottom: 10px;
