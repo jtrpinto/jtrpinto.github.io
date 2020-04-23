@@ -46,6 +46,7 @@ function setColours(colours) {
     var style = document.createElement('style');
     document.head.appendChild(style);
     style.sheet.insertRule('.header-cover {background: ' + gradient_transparent + ';}')
+    style.sheet.insertRule('.pub-header-cover {background: ' + gradient_transparent + ';}')
     style.sheet.insertRule('#research {background: ' + gradient_opaque + ';}');
     style.sheet.insertRule('#cv {background: ' + gradient_opaque + ';}');
     style.sheet.insertRule('#publications-main .paper:hover .paper-title{color: ' + strong_colour + ';}');
@@ -58,6 +59,8 @@ function setColours(colours) {
     style.sheet.insertRule('li:hover .circle {background-color: ' + strong_colour + ';}');
     style.sheet.insertRule('li:hover .circle-small {background-color: ' + strong_colour + ';}');
     style.sheet.insertRule('li:hover .flag-title {color: ' + strong_colour + ';}');
+    style.sheet.insertRule('.untoggled-button {border-color: #bbbbbb; color: #bbbbbb;}');
+    style.sheet.insertRule('.untoggled-button:hover {border-color: #bbbbbb; background: #bbbbbb;}');
     style.sheet.insertRule('.gray-button {border-color: ' + weak_colour + '; color: ' + weak_colour + ';}');
     style.sheet.insertRule('.gray-button:hover {border-color: ' + strong_colour + '; background: ' + strong_colour + ';}');
     style.sheet.insertRule('.white-button:hover {color: ' + strong_colour + ';}');
