@@ -69,8 +69,9 @@ function setColours(colours) {
     style.sheet.insertRule('#about .about-intro {color: ' + weak_colour + ';}');
     style.sheet.insertRule('#news a:hover {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.activity-arrows .fas:hover {color: ' + strong_colour + ';}');
-    style.sheet.insertRule('.experience-title, .publications-title, .skills-title, #activity-title {color: ' + strong_colour + ';}');
+    style.sheet.insertRule('.news-title, .experience-title, .publications-title, .skills-title, #activity-title {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.publications-subtitle, .skills-subtitle {color: ' + weak_colour + ';');
+    style.sheet.insertRule('.news-item:hover .news-item-text {color:' + strong_colour + ';');
     style.sheet.insertRule('.activity-item:hover .item-title, .activity-item:hover .item-title-bold {color: ' + strong_colour + ';}');
     style.sheet.insertRule('#publications .fas, .activity-item .fas {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.c100.blue .bar, .c100.blue .fill {border-color: ' + weak_colour + ' !important;');
