@@ -933,7 +933,7 @@ li:hover .circle-small {
     display: inline;
     font-weight: 600;
     z-index: 15;
-    padding: 7px;
+    padding: 5px;
 }
 
 .direction-l .flag,
