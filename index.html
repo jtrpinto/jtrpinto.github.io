@@ -23,35 +23,6 @@
 
 <body onscroll="closeMenuOnScroll();" onresize="fitResearchSize(); fitActivitySize();">
 
-    <!--
-    <div class="snowflakes" aria-hidden="true">
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-    </div>
-    -->
-
     <div id="navbar">
         <div class="navbar-wrap">
             <img onclick="nextColour();" id="triangle" src="files/img/white_tri.svg"></img>
@@ -93,14 +64,6 @@
         </div>
     </div>
 
-    <!--
-    <div id="news">
-        <div class="news-wrap">
-            <a href="https://vcmi.inesctec.pt/iwbf2020" target="_blank">Check out IWBF 2020, the International Workshop on Biometrics and
-                Forensics!</a>
-        </div>
-    </div>
-    -->
     <div class="news">
         <div class="news-wrap">
             <span class="news-title">news</span>
@@ -682,7 +645,7 @@
                         <span class="publication-stats-circle-title">publications</span>
                     </div>
                     <div class="publication-stats-circle">
-                        <span class="publication-stats-circle-number">145</span>
+                        <span class="publication-stats-circle-number">150</span>
                         <span class="publication-stats-circle-title">citations</span>
                     </div>
                     <div class="publication-stats-circle">
@@ -696,92 +659,6 @@
                 </div>
                 </a>
             </div>
-
-            <!--
-            <div style="width: 100%; height: 150px;">
-                <svg id="publications-graph" width="100%" height="100%"></svg>
-            </div>
-
-            <script>
-                function make_svg_path(v, width, height, marginx, marginy, scale) {
-                    var a = "";
-                    var start = marginx;
-                    var skip = (width - 2 * marginx) / (v.length - 1);
-                    for (i in v) {
-                        if (i == 0) {
-                            var x = marginx;
-                            var y = height - scale * v[i] - marginy;
-                            a += 'M' + x + ' ' + y + ' ';
-                        } else {
-                            var x = marginx + i * skip;
-                            var y = height - scale * v[i] - marginy;
-                            a += 'L' + x + ' ' + y + ' ';
-                        };
-                    };
-                    return a;
-                };
-                function make_svg_path_fill(v, width, height, marginx, marginy, scale) {
-                    var a = "";
-                    var start = marginx;
-                    var skip = (width - 2 * marginx) / (v.length - 1);
-                    a += 'M' + marginx + ' ' + (height - marginy) + ' ';
-                    for (i in v) {
-                        var x = marginx + i*skip;
-                        var y = height - scale * v[i] - marginy;
-                        a += 'L' + x + ' ' + y + ' ';
-                    };
-                    a += 'L' + (marginx + (v.length - 1) * skip) + ' ' + (height - marginy) + ' Z';
-                    return a;
-                };
-                function plot_on_svg(svgobject, v, color, fillcolor, marginx, marginy, scale) {
-                    var svgwidth = svgobject.clientWidth;
-                    var svgheight = svgobject.clientHeight;
-                    var path1 = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                    path1.setAttribute("d", make_svg_path(v, svgwidth, svgheight, marginx, marginy, scale));
-                    path1.setAttribute("stroke", color)
-                    path1.setAttribute("stroke-width", "2")
-                    path1.setAttribute("fill", "none")
-                    var path2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                    path2.setAttribute("d", make_svg_path_fill(v, svgwidth, svgheight, marginx, marginy, scale));
-                    path2.setAttribute("stroke", "none")
-                    path2.setAttribute("fill", fillcolor)
-                    svgobject.appendChild(path2);
-                    svgobject.appendChild(path1);
-                };
-                function plot_years(svgobject, years, marginx) {
-                    var width = svgobject.clientWidth;
-                    var height = svgobject.clientHeight;
-                    var skip = (width - 2 * marginx) / (years.length - 1);
-                    for (i in years) {
-                        var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-                        text.setAttribute("x", marginx + i * skip - 20);
-                        text.setAttribute("y", height - 5);
-                        text.setAttribute("fill", "#000000");
-                        text.setAttribute("class", "pgraph-year-label")
-                        text.textContent = years[i];
-                        svgobject.appendChild(text);
-                    };
-                };
-                /* Making the plot of publications over time */
-                var years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017];
-                var types = ['Journal Articles', 'Conference Articles', 'Book Chapters', 'Books', 'Others', 'MSc Theses', 'PhD Theses'];
-                var pjour = [10, 12, 15, 19, 22, 19, 17, 20];
-                var pconf = [23, 25, 29, 30, 32, 31, 30, 34];
-                var pbkch = [2,  5,  3,  4,  4,  5,  6,  3 ];
-                var pbook = [1,  0,  0,  1,  1,  2,  1,  0 ];
-                var pothr = [1,  0,  0,  0,  0,  1,  0,  0 ];
-                var svgobject = document.getElementById("publications-graph")
-                var marginx = 50;
-                var marginy = 20;
-                var scale = 3.0;
-                plot_on_svg(svgobject, pconf, 'hsl(194, 40%, 80%)', 'hsl(194, 40%, 80%)', marginx, marginy, scale);
-                plot_on_svg(svgobject, pjour, 'hsl(194, 50%, 65%)', 'hsl(194, 50%, 65%)', marginx, marginy, scale);
-                plot_on_svg(svgobject, pbkch, 'hsl(194, 60%, 50%)', 'hsl(194, 60%, 50%)', marginx, marginy, scale);
-                plot_on_svg(svgobject, pbook, 'hsl(194, 70%, 35%)', 'hsl(194, 70%, 35%)', marginx, marginy, scale);
-                plot_on_svg(svgobject, pothr, 'hsl(194, 80%, 20%)', 'hsl(194, 80%, 20%)', marginx, marginy, scale);
-                plot_years(svgobject, years, marginx);
-            </script>
-            -->
 
             <div id="publications-full" class="hidden">
                 <span class="publications-subtitle">journal articles (5)</span>
@@ -854,6 +731,7 @@
                         <a href="files/bibtex/jpinto2017joeim.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
                 </div>
+
                 <span class="publications-subtitle">international conference articles (9)</span>
                 <div class="paper">
                     <i class="fas fa-caret-right"></i>
@@ -968,15 +846,17 @@
                         <a href="files/bibtex/jpinto2018ijcnn.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
                 </div>
+
                 <span class="publications-subtitle">book chapters (2)</span>
                 <div class="paper">
                     <i class="fas fa-caret-right"></i>
                     <span class="paper-title">ECG Biometrics</span><br>
                     <span class="paper-author"><u>J. R. Pinto</u> and J. S. Cardoso,</span>
                     <span class="paper-venue">Encyclopedia of Cryptography, Security and Privacy,</span>
-                    <span class="paper-year">2020 [in press]</span>
+                    <span class="paper-year">2020</span>
                     <div class="paper-links">
-                        <a href="files/bibtex/jpinto2020encyc.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
+                        <a href="https://doi.org/10.1007/978-3-642-27739-9_1517-1" target="_blank"><span class="gray-button small-button">link</span></a>
+                        <a href="files/bibtex/jpinto2021encyc.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
                 </div>
                 <div class="paper">
