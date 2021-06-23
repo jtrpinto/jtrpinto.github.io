@@ -679,7 +679,7 @@ a:active {
 #publications-full .paper-author,
 #publications-full .paper-year,
 .activity-item .item-desc {
-    display: inline-block;
+    display: inline;
     color: #888888;
     font-size: 0.8em;
 }
