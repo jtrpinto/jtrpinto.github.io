@@ -58,12 +58,12 @@
             chartDiv.style.margin = '15px auto';
 
             var data = google.visualization.arrayToDataTable([
-                ['', 'Journal', 'Int\'l Conference', 'Book Chapter', 'Nat\'l Conference', 'Citations'],
-                ['2017',  2, 0, 0, 0,  0],
-                ['2018',  1, 1, 1, 1,  10],
-                ['2019',  0, 2, 1, 3,  60],
-                ['2020',  1, 5, 0, 3,  74],
-                ['2021',  2, 6, 1, 0,  38]
+                ['', 'Journal', 'Int\'l Conference', 'Book Chapter', 'Nat\'l Conference', 'Thesis', 'Citations'],
+                ['2017',  2, 0, 0, 0, 1, 0],
+                ['2018',  1, 1, 1, 1, 0, 10],
+                ['2019',  0, 2, 1, 3, 0, 60],
+                ['2020',  1, 5, 0, 3, 0, 74],
+                ['2021',  2, 6, 1, 0, 0, 38]
             ]);
 
             var materialOptions = {
@@ -75,11 +75,12 @@
                 },
                 series: {
                     // Gives each series an axis name that matches the Y-axis below.
-                    0: {axis: 'Pubs', color: hsl2hex(hue, 80, 30)},
-                    1: {axis: 'Pubs', color: hsl2hex(hue, 65, 45)},
+                    0: {axis: 'Pubs', color: hsl2hex(hue, 80, 40)},
+                    1: {axis: 'Pubs', color: hsl2hex(hue, 65, 50)},
                     2: {axis: 'Pubs', color: hsl2hex(hue, 50, 60)},
-                    3: {axis: 'Pubs', color: hsl2hex(hue, 35, 75)},
-                    4: {axis: 'Cites', color: '#BBBBBB'}
+                    3: {axis: 'Pubs', color: hsl2hex(hue, 35, 70)},
+                    4: {axis: 'Pubs', color: hsl2hex(hue, 20, 80)},
+                    5: {axis: 'Cites', color: '#BBBBBB'}
                 },
                 axes: {
                     // Adds labels to each axis; they don't have to match the axis names.
