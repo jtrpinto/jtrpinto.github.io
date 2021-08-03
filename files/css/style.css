@@ -628,7 +628,7 @@ a:active {
 }
 
 #publications-full{
-    max-height: 3000px;
+    max-height: 5000px;
     overflow: hidden;
     transition: max-height 2s;
 }
