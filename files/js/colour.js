@@ -50,7 +50,8 @@ function setColours(colours) {
     style.sheet.insertRule('#research {background: ' + gradient_opaque + ';}');
     style.sheet.insertRule('#cv {background: ' + gradient_opaque + ';}');
     style.sheet.insertRule('#publications-main .paper:hover .paper-title{color: ' + strong_colour + ';}');
-    style.sheet.insertRule('#publications-full .paper:hover .paper-title{color: ' + strong_colour + ' ;}');
+    style.sheet.insertRule('#publications-full .paper:hover .paper-title{color: ' + weak_colour + ' ;}');
+    style.sheet.insertRule('.publications-full-title {color: ' + weak_colour + ' ;}'); 
     style.sheet.insertRule('.publication-stats-circle {border-color: ' + weak_colour + '; color: ' + strong_colour + ' ;}');
     style.sheet.insertRule('.publication-stats-circle:hover {background-color: ' + strong_colour + '; border-color: ' + strong_colour + ';}');
     style.sheet.insertRule('#contact .links a:hover {color: ' + weak_colour + ';}');

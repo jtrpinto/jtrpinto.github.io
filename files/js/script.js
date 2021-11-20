@@ -148,6 +148,16 @@ function closeMenuOnScroll() {
     }
 }
 
+function openPopUp(id) {
+    document.getElementById(id).style.zIndex = '100';
+    document.getElementById(id).style.opacity = 1;
+}
+
+function closePopUp(id) {
+    document.getElementById(id).style.opacity = 0;
+    document.getElementById(id).style.zIndex = '-100';
+}
+
 function toggle_experience_timeline() {
     var arrayOfElements=document.getElementsByClassName('hidden-experience');
     var lengthOfArray=arrayOfElements.length;
