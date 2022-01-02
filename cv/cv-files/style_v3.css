@@ -66,6 +66,24 @@ page[size="A4"] {
     bottom: 1cm;
     left: 1cm;
     font-size: 11pt;
+    width: 6cm;
+    text-align: right;
+}
+
+.page-odd .website-link b {
+    display: block;
+    margin-right: calc(3.5rem + 10px);
+}
+
+.page-odd .website-link b span {
+    font-size: 1.2rem;
+}
+
+.page-odd .website-link img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3.5rem;
 }
 
 .page-odd .left-column {
@@ -290,7 +308,7 @@ page[size="A4"] {
 }
 
 .smaller-section {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .smaller-section .title {
@@ -298,12 +316,12 @@ page[size="A4"] {
     font-size: 12pt;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .smaller-section .icon {
     margin-left: 5px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 a {
@@ -313,8 +331,8 @@ a {
 
 .item {
     display: inline-block;
-    padding: 2px 3px;
-    border-radius: 5px;
+    padding: 1px 4px;
+    border-radius: 10px;
     margin-bottom: 2px;
     background-color: #55555555;
     font-weight: 700;
