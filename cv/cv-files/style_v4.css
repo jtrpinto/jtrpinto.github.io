@@ -177,7 +177,7 @@ page[size="A4"] {
     display: block;
     position: relative;
     width: 100%;
-    padding-top: 26pt;
+    padding-top: 22pt;
 }
 
 .section + .section {
@@ -245,7 +245,7 @@ page[size="A4"] {
     font-size: 9pt;
     font-weight: 700;
     text-align: right;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 .section .entry-subtitle {
@@ -258,7 +258,6 @@ page[size="A4"] {
     display: block;
     font-size: 9.5pt;
     line-height: 11pt;
-    margin-top: 2px;
 }
 
 .section .entry-description ul {
@@ -280,7 +279,7 @@ page[size="A4"] {
 }
 
 .section .entry + .entry {
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 @media print {
