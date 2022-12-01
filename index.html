@@ -52,9 +52,9 @@
                 ['2017',  2, 0, 0, 0, 1, 0],
                 ['2018',  1, 1, 0, 1, 0, 9],
                 ['2019',  0, 2, 1, 3, 0, 72],
-                ['2020',  1, 5, 0, 3, 0, 87],
-                ['2021',  3, 8, 1, 2, 0, 138],
-                ['2022',  4, 2, 0, 0, 0, 103]
+                ['2020',  1, 5, 0, 3, 0, 84],
+                ['2021',  3, 8, 1, 2, 0, 144],
+                ['2022',  4, 2, 0, 0, 0, 121]
             ]);
 
             var materialOptions = {
@@ -96,7 +96,6 @@
 
 <body onscroll="closeMenuOnScroll();" onresize="fitResearchSize(); fitActivitySize();">
 
-    <!-- Goodbye snowflakes, see you next year!
     <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">❅</div>
         <div class="snowflake">❆</div>
@@ -123,7 +122,6 @@
         <div class="snowflake">❅</div>
         <div class="snowflake">❆</div>
     </div>
-    -->
     
     <div id="navbar">
         <div class="navbar-wrap">
@@ -134,7 +132,6 @@
                 <a onclick="scrollToElement('research');">research</a> /
                 <a onclick="scrollToElement('publications');">publications</a> /
                 <a onclick="scrollToElement('activity');">activity</a> /
-                <!--<a onclick="scrollToElement('skills');">skills</a> /-->
                 <a onclick="scrollToElement('cv');">cv</a> /
                 <a onclick="scrollToElement('contact');">contact</a>
             </div>
@@ -147,7 +144,6 @@
                 <a onclick="scrollToElement('research');">research</a> /<br>
                 <a onclick="scrollToElement('publications');">publications</a> /<br>
                 <a onclick="scrollToElement('activity');">activity</a> /<br>
-                <!--<a onclick="scrollToElement('skills');">skills</a> /<br>-->
                 <a onclick="scrollToElement('cv');">cv</a> /<br>
                 <a onclick="scrollToElement('contact');">contact</a> /
             </div>
@@ -158,8 +154,8 @@
         <div class="header-cover">
             <div class="header-wrap">
                 <img onclick="nextColour(); drawChart();" id="jrp-logo" src="files/img/jrp_singleline.png">
-                <div class="header-message" style="text-transform: capitalize; font-size: 1.2rem;">WELCOME TO MY WEBSITE!</div>
-                <!--<div class="header-message" style="font-family: 'Marck Script', cursive !important; text-transform: capitalize; font-size: 1.8rem;">❅ Happy Holidays! ❆</div>-->
+                <!--<div class="header-message" style="text-transform: capitalize; font-size: 1.2rem;">WELCOME TO MY WEBSITE!</div>-->
+                <div class="header-message" style="font-family: 'Marck Script', cursive !important; text-transform: capitalize; font-size: 1.8rem;">❅ Happy Holidays! ❆</div>
             </div>
             <div class="big-chevron-wrap">
                 <a onclick="scrollToElement('about');"><img id="big-chevron" src="files/img/big_chevron.png"></a>
@@ -223,6 +219,14 @@
                                 <span class="flag-description-small">
                                     Research on the THEIA innovation project (with the University of Porto)
                                 </span>
+                            </div>
+                        </div>
+                        <div class="hidden-experience">
+                            <div class="flag-wrapper">
+                                <span class="circle-small"></span>
+                                <div class="flag">
+                                    <span class="flag-description-small">Technical co-lead for Infrastructure and Security subproject (SP5)</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -290,6 +294,30 @@
                             <div class="flag-wrapper">
                                 <span class="circle-small"></span>
                                 <div class="flag">
+                                    <span class="flag-description-small">Collaboration on the Aurora project (with Bosch Car Multimedia)</span>
+                                </div>
+                            </div>
+                            <div class="flag-wrapper">
+                                <span class="circle-small"></span>
+                                <div class="flag">
+                                    <span class="flag-description-small">Organisation committee member at VISUM 2022 Summer School</span>
+                                </div>
+                            </div>
+                            <div class="flag-wrapper">
+                                <span class="circle-small"></span>
+                                <div class="flag">
+                                    <span class="flag-description-small">Invited Speaker & Workshop Lecturer at Symposium on Bioengineering 2022</span>
+                                </div>
+                            </div>
+                            <div class="flag-wrapper">
+                                <span class="circle-small"></span>
+                                <div class="flag">
+                                    <span class="flag-description-small">Publicity Chair at xAI4Biometrics WACV 2022 Workshop</span>
+                                </div>
+                            </div>
+                            <div class="flag-wrapper">
+                                <span class="circle-small"></span>
+                                <div class="flag">
                                     <span class="flag-description-small">Technical & Programme Chair at CIBB 2021 International Conference</span>
                                 </div>
                             </div>
@@ -320,7 +348,7 @@
                             <div class="flag-wrapper">
                                 <span class="circle-small"></span>
                                 <div class="flag">
-                                    <span class="flag-description-small">Lecturer at Rise and Get Wise Machine Learning Workshop by EMBS UP (Dec. 2020)</span>
+                                    <span class="flag-description-small">Lecturer at Rise and Get Wise ML Workshop by EMBS UP (Dec. 2020)</span>
                                 </div>
                             </div>
                             <div class="flag-wrapper">
@@ -709,15 +737,15 @@
                             <span class="publication-stats-circle-title">publications</span>
                         </div>
                         <div class="publication-stats-circle">
-                            <span class="publication-stats-circle-number">411</span>
+                            <span class="publication-stats-circle-number">433</span>
                             <span class="publication-stats-circle-title">citations</span>
                         </div>
                         <div class="publication-stats-circle">
-                            <span class="publication-stats-circle-number">8</span>
+                            <span class="publication-stats-circle-number">9</span>
                             <span class="publication-stats-circle-title">h-index</span>
                         </div>
                         <div class="publication-stats-circle">
-                            <span class="publication-stats-circle-number">6</span>
+                            <span class="publication-stats-circle-number">7</span>
                             <span class="publication-stats-circle-title">i10</span>
                         </div>
                     </div>
@@ -1080,15 +1108,13 @@
                         Electrocardiogram Lead Conversion from Single-Lead Blindly-Segmented Signals
                     </span><br>
                     <span class="paper-author">S. C. Beco, <u>J. R. Pinto</u>, and J. S. Cardoso,</span>
-                    <span class="paper-venue">BMC Medical Informatics and Decision Making,</span>
-                    <span class="paper-year">2022 [submitted]</span>
-                    <!--
+                    <span class="paper-venue">BMC Medical Informatics and Decision Making 22,</span>
+                    <span class="paper-year">2022</span>
                     <div class="paper-links">
-                        <a href="https://dx.doi.org/10.1109/ACCESS.2021.3128016" target="_blank"><span class="gray-button small-button">link</span></a>
-                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9614134" target="_blank"><span class="gray-button small-button">pdf</span></a>
-                        <a href="files/bibtex/testeves2021access.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
+                        <a href="https://dx.doi.org/10.1186/s12911-022-02063-6" target="_blank"><span class="gray-button small-button">link</span></a>
+                        <a href="https://bmcmedinformdecismak.biomedcentral.com/counter/pdf/10.1186/s12911-022-02063-6.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
+                        <a href="files/bibtex/sbeco2022bmc.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
-                    -->
                 </div>
                 <div class="paper">
                     <span class="paper-title">
@@ -1097,28 +1123,22 @@
                     <span class="paper-author">P. C. Neto, T. Gonçalves, <u>J. R. Pinto</u>, W. Silva, A. F. Sequeira, A. Ross, and J. S. Cardoso,</span>
                     <span class="paper-venue">ACM Computing Surveys,</span>
                     <span class="paper-year">2022 [submitted]</span>
-                    <!--
                     <div class="paper-links">
-                        <a href="https://dx.doi.org/10.1109/ACCESS.2021.3128016" target="_blank"><span class="gray-button small-button">link</span></a>
-                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9614134" target="_blank"><span class="gray-button small-button">pdf</span></a>
-                        <a href="files/bibtex/testeves2021access.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
+                        <a href="https://arxiv.org/abs/2208.09500" target="_blank"><span class="gray-button small-button">arXiv</span></a>
                     </div>
-                    -->
                 </div>
                 <div class="paper">
                     <span class="paper-title">
-                        Towards actor independent training of deep learning models for activity and emotion characterisation
+                        Toward Vehicle Occupant-Invariant Models for Activity Characterization
                     </span><br>
                     <span class="paper-author">L. G. Capozzi, V. Barbosa, C. Pinto, <u>J. R. Pinto</u>, A. Pereira, P. M. Carvalho, and J. S. Cardoso,</span>
-                    <span class="paper-venue">IEEE Access,</span>
-                    <span class="paper-year">2022 [submitted]</span>
-                    <!--
+                    <span class="paper-venue">IEEE Access 10,</span>
+                    <span class="paper-year">2022</span>
                     <div class="paper-links">
-                        <a href="https://dx.doi.org/10.1109/ACCESS.2021.3128016" target="_blank"><span class="gray-button small-button">link</span></a>
-                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9614134" target="_blank"><span class="gray-button small-button">pdf</span></a>
-                        <a href="files/bibtex/testeves2021access.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
+                        <a href="https://doi.org/10.1109/ACCESS.2022.3210973" target="_blank"><span class="gray-button small-button">link</span></a>
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9906079" target="_blank"><span class="gray-button small-button">pdf</span></a>
+                        <a href="files/bibtex/lcapozzi2022access.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
-                    -->
                 </div>
                 <div class="paper">
                     <span class="paper-title">
@@ -1128,7 +1148,9 @@
                     <span class="paper-venue">IEEE Access 10,</span>
                     <span class="paper-year">2022</span>
                     <div class="paper-links">
-                        <a href="https://doi.org/10.1109/10.1109/ACCESS.2022.3199014" target="_blank"><span class="gray-button small-button">link</span></a>
+                        <a href="https://doi.org/10.1109/ACCESS.2022.3199014" target="_blank"><span class="gray-button small-button">link</span></a>
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9857925" target="_blank"><span class="gray-button small-button">pdf</span></a>
+                        <a href="files/bibtex/pneto2022access.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
                 </div>
                 <div class="paper">
@@ -1224,19 +1246,15 @@
 
                 <span class="publications-subtitle">international conference articles (18)</span>
                 <div class="paper">
-                    <span class="paper-title">IJCB OCFR 2022: Competition on Occluded Face Recognition From Synthetically Generated Structure-
-                        Aware Occlusions</span><br>
+                    <span class="paper-title">IJCB OCFR 2022: Competition on Occluded Face Recognition From Synthetically Generated Structure-Aware Occlusions</span><br>
                     <span class="paper-author">P. C. Neto, F. Boutros, <u>J. R. Pinto</u>, N. Damer, A. F. Sequeira, J. S. Cardoso, M. Bengherabi, A. Bousnat, S.
                         Boucheta, N. Hebbadj, B. Yahya-Zoubir, M. E. Erakın, U. Demir, H. K. Ekenel, P. B. Q. Vidal, and D. Menotti,</span>
                     <span class="paper-venue">International Joint Conference on Biometrics (IJCB 2022),</span>
-                    <span class="paper-year">2022 [accepted]</span> 
-                    <!--
+                    <span class="paper-year">2022 [in press]</span> 
                     <div class="paper-links">
-                        <a href="https://www.scitepress.org/Papers/2022/108389/" target="_blank"><span class="gray-button small-button">link</span></a>
-                        <a href="https://www.scitepress.org/Papers/2022/108389/108389.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
-                        <a href="files/bibtex/jpinto2022visapp.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
+                        <a href="https://arxiv.org/abs/2208.02760" target="_blank"><span class="gray-button small-button">arXiv</span></a>
+                        <a href="files/bibtex/pneto2022ocfr.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
-                    -->
                 </div>
                 <div class="paper">
                     <span class="paper-title">Streamlining Action Recognition in Autonomous Shared Vehicles with an Audiovisual Cascade Strategy</span><br>
@@ -1266,6 +1284,7 @@
                     <span class="paper-venue">17th International Conference on Computational Intelligence Methods for Bioinformatics and Biostatistics (CIBB 2021),</span>
                     <span class="paper-year">2021</span> 
                     <div class="paper-links">
+                        <a href="files/pdf/sbeco2021cibb.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
                         <a href="files/bibtex/sbeco2021cibb.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
                 </div>
