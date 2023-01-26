@@ -763,7 +763,7 @@
 
     <div id="activity">
         <div id="activity-wrap">
-            <span id="activity-title">activity</span>
+            <span id="activity-title" onclick="openPopUp('students-popup')">activity</span>
             <div class="activity-arrows">
                 <i onclick="prevActivitySlide();" class="arrow-left fas fa-chevron-left"></i>
                 <i onclick="nextActivitySlide();" class="arrow-right fas fa-chevron-right"></i>
@@ -1586,6 +1586,58 @@
                         <a href="http://hdl.handle.net/10216/106106" target="_blank"><span class="gray-button small-button">link</span></a>
                         <a href="files/bibtex/jpinto2017thesis.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
+                </div>
+            </div>
+
+            <div style="height: 150px;"></div>
+
+        </div>
+    </div>
+
+    <div id="students-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopUp('students-popup')"><i class="fas fa-times"></i></span>
+
+            <span class="publications-full-title">master students</span>
+
+            <div id="publications-full">
+                <span class="publications-subtitle">current students (2)</span>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Cláudia Maria Eira Ribeiro</b> (as Co-supervisor, 2022/23)
+                    </span><br>
+                    <span class="paper-author">"Drawing the Line",</span>
+                    <span class="paper-venue">Master in Electrical and Computer Engineering, University of Porto</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b></b> (as Co-supervisor, 2022/23)
+                    </span><br>
+                    <span class="paper-author">"",</span>
+                    <span class="paper-venue">Master in , University of Porto</span>
+                </div>
+
+                <span class="publications-subtitle">past students (14)</span>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Mariana Silva Xavier</b> (as Co-supervisor, 2021/22)
+                    </span><br>
+                    <span class="paper-author">"Inside Out: Fusing ECG and Face Information to Recognise Emotions",</span>
+                    <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Pedro Duarte Lopes</b> (as External Supervisor, 2021/22)
+                    </span><br>
+                    <span class="paper-author">"Deep Neural Networks for Face-based Emotion Recognition",</span>
+                    <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Guilherme Barbosa</b> (as Co-supervisor, 2021/22)
+                    </span><br>
+                    <span class="paper-author">"Going 2D: Exploring Learnable Bidimensional Representations for ECG Biometrics",</span>
+                    <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
                 </div>
             </div>
 
