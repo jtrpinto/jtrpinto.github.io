@@ -1,5 +1,4 @@
 var currentResearchTopic = 0;
-var currentActivitySlide = 0;
 
 
 function initialResearchTopic() {
@@ -15,20 +14,6 @@ function initialResearchTopic() {
             researchTopics[i].style.opacity = 0;
             researchTopics[i].style.zIndex = '1';
             researchImages[i].style.opacity = 0;
-        }
-    }
-}
-
-function initialActivitySlide() {
-    var activitySlides = document.getElementsByClassName('activity-slide');
-    var numActivitySlides = activitySlides.length;
-    for (var i = 0; i < numActivitySlides; i++){
-        if (i == 0){
-            activitySlides[i].style.opacity = 1;
-            activitySlides[i].style.zIndex = '2';
-        } else {
-            activitySlides[i].style.opacity = 0;
-            activitySlides[i].style.zIndex = '1';
         }
     }
 }
@@ -56,26 +41,6 @@ function nextResearchTopic() {
     currentResearchTopic = next;
 }
 
-function nextActivitySlide() {
-    var activitySlides = document.getElementsByClassName('activity-slide'); 
-    var numActivitySlides = activitySlides.length;
-    if (currentActivitySlide == numActivitySlides - 1) {
-        next = 0;
-    } else {
-        next = currentActivitySlide + 1;
-    }
-    for (var i = 0; i < numActivitySlides; i++){
-        if (i == next){
-            activitySlides[i].style.opacity = 1;
-            activitySlides[i].style.zIndex = '2';
-        } else {
-            activitySlides[i].style.opacity = 0;
-            activitySlides[i].style.zIndex = '1';
-        }
-    }
-    currentActivitySlide = next;
-}
-
 function prevResearchTopic() {
     var researchTopics = document.getElementsByClassName('research-text');
     var researchImages = document.getElementsByClassName('research-title-image'); 
@@ -97,26 +62,6 @@ function prevResearchTopic() {
         }
     }
     currentResearchTopic = prev;
-}
-
-function prevActivitySlide() {
-    var activitySlides = document.getElementsByClassName('activity-slide'); 
-    var numActivitySlides = activitySlides.length;
-    if (currentActivitySlide == 0) {
-        prev = numActivitySlides - 1;
-    } else {
-        prev = currentActivitySlide - 1;
-    }
-    for (var i = 0; i < numActivitySlides; i++){
-        if (i == prev){
-            activitySlides[i].style.opacity = 1;
-            activitySlides[i].style.zIndex = '2';
-        } else {
-            activitySlides[i].style.opacity = 0;
-            activitySlides[i].style.zIndex = '1';
-        }
-    }
-    currentActivitySlide = prev;
 }
 
 function scrollToElement(id) {
@@ -199,19 +144,6 @@ function fitResearchSize() {
     document.getElementById('research-info').style.height = maxsize;
 }
 
-function fitActivitySize() {
-    var activitySlides = document.getElementsByClassName('activity-slide');
-    var numSlides = activitySlides.length;
-    var maxsize = 0;
-    for (var i = 0; i < numSlides; i++){
-        if (activitySlides[i].scrollHeight >= maxsize){
-            maxsize = activitySlides[i].scrollHeight;
-        }
-    };
-    var titleHeight = document.getElementById('activity-title').scrollHeight;
-    document.getElementById('activity-wrap').style.height = maxsize + titleHeight;
-}
-
 function init() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -229,7 +161,6 @@ function init() {
         }
     });
     initialResearchTopic();
-    initialActivitySlide();
 }
 
 window.onload = init();
