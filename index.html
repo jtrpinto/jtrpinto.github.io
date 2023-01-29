@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="files/css/style_v2.css">
+    <link rel="stylesheet" type="text/css" href="files/css/style_v3.css">
     <link rel="stylesheet" type="text/css" href="files/css/circle.css">
     <link rel="stylesheet" type="text/css" href="files/css/snowflakes.css">
     <link rel="stylesheet" type="text/css" href="files/icomoon/style.css">
@@ -50,11 +50,12 @@
             var data = google.visualization.arrayToDataTable([
                 ['', 'Journal', 'Int\'l Conference', 'Book Chapter', 'Nat\'l Conference', 'Thesis', 'Citations'],
                 ['2017',  2, 0, 0, 0, 1, 0],
-                ['2018',  1, 1, 0, 1, 0, 9],
-                ['2019',  0, 2, 1, 3, 0, 72],
-                ['2020',  1, 5, 0, 3, 0, 83],
-                ['2021',  3, 8, 1, 2, 0, 142],
-                ['2022',  4, 2, 0, 0, 1, 136]
+                ['2018',  1, 1, 0, 1, 0, 10],
+                ['2019',  0, 2, 1, 3, 0, 70],
+                ['2020',  1, 5, 0, 3, 0, 81],
+                ['2021',  3, 8, 1, 2, 0, 140],
+                ['2022',  4, 2, 0, 0, 1, 147],
+                ['2023',  0, 0, 0, 0, 0, 12]
             ]);
 
             var materialOptions = {
@@ -279,6 +280,12 @@
                             </div>
                         </div>
                         <div class="hidden-experience">
+                            <div class="flag-wrapper">
+                                <span class="circle-small"></span>
+                                <div class="flag">
+                                    <span class="flag-description-small">EAB Max Snijder Award 2022</span>
+                                </div>
+                            </div>
                             <div class="flag-wrapper">
                                 <span class="circle-small"></span>
                                 <div class="flag">
@@ -737,11 +744,11 @@
                             <span class="publication-stats-circle-title">publications</span>
                         </div>
                         <div class="publication-stats-circle">
-                            <span class="publication-stats-circle-number">448</span>
+                            <span class="publication-stats-circle-number">462</span>
                             <span class="publication-stats-circle-title">citations</span>
                         </div>
                         <div class="publication-stats-circle">
-                            <span class="publication-stats-circle-number">9</span>
+                            <span class="publication-stats-circle-number">8</span>
                             <span class="publication-stats-circle-title">h-index</span>
                         </div>
                         <div class="publication-stats-circle">
@@ -763,281 +770,25 @@
 
     <div id="activity">
         <div id="activity-wrap">
-            <span id="activity-title" onclick="openPopUp('students-popup')">activity</span>
-            <div class="activity-arrows">
-                <i onclick="prevActivitySlide();" class="arrow-left fas fa-chevron-left"></i>
-                <i onclick="nextActivitySlide();" class="arrow-right fas fa-chevron-right"></i>
-            </div>
             <div class="activity-slide">
-                <span class="activity-subtitle">supervised msc students</span>
-                <span class="activity-subsubtitle">current students (4)</span>
-                
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Vítor Barbosa (2021/22)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Activity and Emotion Classification in Shared Vehicles"</em>,
-                        Master in Informatics and Computing Engineering, Universidade do Porto
-                    </span>
+                <span id="activity-title">activity</span>
+                <div class="activity-item" onclick="openPopUp('awards-popup')">
+                    <span class="item-number">5</span><span class="item-title">awards</span><i class="fas fa-plus-circle"></i>
                 </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Mariana S. Xavier (2021/22)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Inside Out: Fusing ECG and Face Information to Recognise Emotions"</em>,
-                        Master in Bioengineering, Universidade do Porto
-                    </span>
+                <div class="activity-item" onclick="openPopUp('projects-popup')">
+                    <span class="item-number">5</span><span class="item-title">research projects</span><i class="fas fa-plus-circle"></i>
                 </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Guilherme T. A. R. Barbosa (2021/22)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Going 2D: Exploring Learnable Bidimensional Representations for ECG Biometrics"</em>,
-                        Master in Bioengineering, Universidade do Porto
-                    </span>
+                <div class="activity-item" onclick="openPopUp('events-popup')">
+                    <span class="item-number">15</span><span class="item-title">scientific events</span><i class="fas fa-plus-circle"></i>
                 </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        External Supervisor of Pedro Duarte Lopes (2020/21)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Deep Neural Networks for Face-based Emotion Recognition"</em>,
-                        Master in Bioengineering, Universidade do Porto
-                    </span>
+                <div class="activity-item" onclick="openPopUp('students-popup')">
+                    <span class="item-number">16</span><span class="item-title">master theses supervised</span><i class="fas fa-plus-circle"></i>
                 </div>
-                
-                <span class="activity-subsubtitle">past students (8)</span>
-                
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        External Supervisor of Telma Esteves (2020/21)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Sleepy Drivers: Drowsiness Monitoring Using ECG and Face Video"</em>,
-                        Master in Biomedical Engineering, Universidade Nova de Lisboa
-                    </span>
+                <div class="activity-item" onclick="openPopUp('interns-popup')">
+                    <span class="item-number">23</span><span class="item-title">interns supervised</span><i class="fas fa-plus-circle"></i>
                 </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Sofia C. Beco (2020/21)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Make My Heartbeat: Generation and Interlead Conversion of ECG Signals"</em>,
-                        Master in Bioengineering, Universidade do Porto
-                    </span>
-                </div>
-
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Inês A. T. A. Magalhães (2020/21)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Feel My Heart: Emotion Recognition Using the Electrocardiogram"</em>,
-                        Master in Bioengineering, Universidade do Porto
-                    </span>
-                </div>
-                
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Arthur J. Matta (2019/20)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Deep Learning For Face Recognition: A Real-Time Face Biometric Recognition System"</em>,
-                        Master in Informatics and Computing Engineering, Universidade do Porto
-                    </span>
-                </div>
-                
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Carolina M. B. R. Afonso (2019/20)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Changing Perspectives: Interlead Conversion in Electrocardiographic Signals"</em>,
-                        Master in Network and Information Systems Engineering, Universidade do Porto
-                    </span>
-                </div>
-
-                
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of João M. G. Ferreira (2019/20)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Head Pose Estimation for Facial Biometric Recognition Systems"</em>,
-                        Master in Informatics and Computing Engineering, Universidade do Porto
-                    </span>
-                </div>
-                
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Leonardo G. Capozzi (2019/20)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Face Recognition For Forensic Applications: Methods for Matching Facial Sketches to Mugshot Pictures"</em>,
-                        Master in Informatics and Computing Engineering, Universidade do Porto
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Gabriel C. Lopes (2018/19)
-                    </span><br>
-                    <span class="item-desc">
-                        <em>"Don't You Forget About Me: Enhancing Long Term Performance in Electrocardiogram Biometrics"</em>,
-                        Master in Bioengineering, Universidade do Porto
-                    </span>
-                </div>
-            </div>
-
-            <div class="activity-slide">
-                <span class="activity-subtitle">supervised internships</span>
-                
-                <span class="activity-subsubtitle">past (23)</span>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of João Carvalho and Paula Ogata (2022)
-                    </span><br>
-                    <span class="item-desc">
-                        Face recognition, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Mariana Calado (2021)
-                    </span><br>
-                    <span class="item-desc">
-                        Drowsiness detection using ECG signals, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Brenda Nogueira and Ana Maria Sousa (July 2021)
-                    </span><br>
-                    <span class="item-desc">
-                        Driver drowsiness detection using face video, CTM Summer Internships 2021, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of João Romão and Bernardo Gabriel (July 2021)
-                    </span><br>
-                    <span class="item-desc">
-                        Motion estimation for activity recognition, CTM Summer Internships 2021, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Renata Lei and Rafael Cristino (July 2021)
-                    </span><br>
-                    <span class="item-desc">
-                        Hotel recognition for fighting human trafficking, CTM Summer Internships 2021, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Guilherme Barbosa (2021)
-                    </span><br>
-                    <span class="item-desc">
-                        An End-to-End Learnt 2D representation for ECG-Based Biometric Authentication, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Duarte Lopes (2021)
-                    </span><br>
-                    <span class="item-desc">
-                        Interpretability for Face Presentation Attack Detection, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Susana Lima (July 2020)
-                    </span><br>
-                    <span class="item-desc">
-                        Detecting Drowsiness Through ECG and Steering Wheel Data, CTM Summer Internships 2020, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of João Fonseca (2020)
-                    </span><br>
-                    <span class="item-desc">
-                        NEB Outclass Internship: Face Photograph Analytics
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Catarina Lopes (2019-2020)
-                    </span><br>
-                    <span class="item-desc">
-                        Face photograph analytics for automatic assessment of ICAO guideline compliance, INESC TEC
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        Co-supervisor of Pedro Silva, Paulo Costa, Manuel Curral, Gil Teixeira, Pedro Neto, Martim Silva, João Mendes, João Moura, and Carolina Afonso (July 2019)
-                    </span><br>
-                    <span class="item-desc">
-                        Various topics related to face biometrics, forensics, and analytics, CTM Summer Internships 2019, INESC TEC
-                    </span>
-                </div>
-            </div>
-
-            <div class="activity-slide">
-                <span class="activity-subtitle">research projects</span>
-                <span class="activity-subsubtitle">current (2)</span>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        EasyRide Project (Collaborator since February 2020)
-                    </span><br>
-                    <span class="item-desc">
-                        In-vehicle activity recognition and wellbeing measurement.
-                    </span>
-                </div>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        AUTOMOTIVE Project (Collaborator from July 2019 to November 2021)
-                    </span><br>
-                    <span class="item-desc">
-                        Driver drowsiness monitoring using unconstrained video and physiological signals.
-                    </span>
-                </div>
-                <span class="activity-subsubtitle">past (1)</span>
-                <div class="activity-item">
-                    <i class="fas fa-caret-right"></i>
-                    <span class="item-title-bold">
-                        CHIC Project (2018/19)
-                    </span><br>
-                    <span class="item-desc">
-                        Quality assessment of print text documents for optical character and image recognition.
-                    </span>
+                <div class="activity-item" onclick="openPopUp('reviews-popup')">
+                    <span class="item-number">124</span><span class="item-title">verified peer reviews</span><i class="fas fa-plus-circle"></i>
                 </div>
             </div>
         </div>
@@ -1059,7 +810,8 @@
             </div>
             <div class="contact-right">
                 <span class="description">
-                    Senior Deep Learning Engineer
+                    Senior Deep Learning Engineer<br>
+                    Bosch Portugal
                 </span>
                 <span class="links">
                     <a title="Email" href="mailto:jtpinto[at]fe.up.pt"><i class="fas fa-envelope"></i></a>
@@ -1606,24 +1358,47 @@
                     <span class="paper-title">
                         <b>Cláudia Maria Eira Ribeiro</b> (as Co-supervisor, 2022/23)
                     </span><br>
-                    <span class="paper-author">"Drawing the Line",</span>
+                    <span class="paper-author">"Drawing the Line: Multimodal Lane Estimation for Autonomous Vehicles",</span>
                     <span class="paper-venue">Master in Electrical and Computer Engineering, University of Porto</span>
                 </div>
                 <div class="paper">
                     <span class="paper-title">
-                        <b></b> (as Co-supervisor, 2022/23)
+                        <b>Ricardo Andrade</b> (as Co-supervisor, 2022/23)
                     </span><br>
-                    <span class="paper-author">"",</span>
-                    <span class="paper-venue">Master in , University of Porto</span>
+                    <span class="paper-author">"Cars Are Watching: Multimodal Detection and Anonymisation of Surrounding Faces for Autonomous Vehicles",</span>
+                    <span class="paper-venue">Master in Data Science, University of Porto</span>
                 </div>
 
                 <span class="publications-subtitle">past students (14)</span>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Vítor Hugo Barbosa</b> (as Co-supervisor, 2021/22)
+                    </span><br>
+                    <span class="paper-author">"Robust occupant action classification in shared autonomous vehicles",</span>
+                    <span class="paper-venue">Master in Informatics and Computing Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/144736" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Pinto Mota</b> (as External Supervisor, 2021/22)
+                    </span><br>
+                    <span class="paper-author">"Deep Implicit Representations in Autonomous Driving",</span>
+                    <span class="paper-venue">Master in Informatics and Computing Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/143727" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
                 <div class="paper">
                     <span class="paper-title">
                         <b>Mariana Silva Xavier</b> (as Co-supervisor, 2021/22)
                     </span><br>
                     <span class="paper-author">"Inside Out: Fusing ECG and Face Information to Recognise Emotions",</span>
                     <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/143759" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
                 </div>
                 <div class="paper">
                     <span class="paper-title">
@@ -1631,6 +1406,9 @@
                     </span><br>
                     <span class="paper-author">"Deep Neural Networks for Face-based Emotion Recognition",</span>
                     <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/143004" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
                 </div>
                 <div class="paper">
                     <span class="paper-title">
@@ -1638,6 +1416,336 @@
                     </span><br>
                     <span class="paper-author">"Going 2D: Exploring Learnable Bidimensional Representations for ECG Biometrics",</span>
                     <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/142451" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Erfan Omidvar</b> (as Co-supervisor, 2021/22)
+                    </span><br>
+                    <span class="paper-author">"Single-Wrist Electrocardiogram Acquisition Application in Biometrics",</span>
+                    <span class="paper-venue">Master in Biomedical Engineering, University of Porto</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Sofia Cardoso Beco</b> (as Co-supervisor, 2020/21)
+                    </span><br>
+                    <span class="paper-author">"Make My Heartbeat: Generation and Interlead Conversion of ECG Signals",</span>
+                    <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/136092" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Inês Antunes Magalhães</b> (as Co-supervisor, 2020/21)
+                    </span><br>
+                    <span class="paper-author">"Feel My Heart: Emotion Recognition Using the Electrocardiogram",</span>
+                    <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/135339" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Telma Sofia Esteves</b> (as External Supervisor, 2020/21)
+                    </span><br>
+                    <span class="paper-author">"Sleepy Drivers: Drowsiness Monitoring Using ECG and Face Video",</span>
+                    <span class="paper-venue">Master in Biomedical Engineering, Nova University of Lisbon</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Arthur Johas Matta</b> (as Co-supervisor, 2019/20)
+                    </span><br>
+                    <span class="paper-author">"Open-World Face Recognition",</span>
+                    <span class="paper-venue">Master in Informatics and Computing Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/130042" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Leonardo Gomes Capozzi</b> (as Co-supervisor, 2019/20)
+                    </span><br>
+                    <span class="paper-author">"Face Recognition For Forensic Applications: Methods for Matching Facial Sketches to Mugshot Pictures",</span>
+                    <span class="paper-venue">Master in Informatics and Computing Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/129080" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Manuel Guedes Ferreira</b> (as Co-supervisor, 2019/20)
+                    </span><br>
+                    <span class="paper-author">"Head Pose Estimation for Facial Biometric Recognition Systems",</span>
+                    <span class="paper-venue">Master in Informatics and Computing Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/129254" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Carolina Barbosa Afonso</b> (as Co-supervisor, 2019/20)
+                    </span><br>
+                    <span class="paper-author">"Changing Perspectives: Interlead Conversion in Electrocardiographic Signals",</span>
+                    <span class="paper-venue">Master in Network & Information Systems Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/129630" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Gabriel Carneiro Lopes</b> (as Co-supervisor, 2018/19)
+                    </span><br>
+                    <span class="paper-author">"Don't You Forget About Me: Enhancing Long Term Performance in Electrocardiogram Biometrics",</span>
+                    <span class="paper-venue">Master in Bioengineering - Biomedical Engineering, University of Porto</span>
+                    <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/121823" target="_blank"><span class="gray-button small-button">link</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: 150px;"></div>
+
+        </div>
+    </div>
+
+    <div id="awards-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopUp('awards-popup')"><i class="fas fa-times"></i></span>
+
+            <span class="publications-full-title">awards</span>
+
+            <div id="publications-full">
+                <span class="publications-subtitle"> </span>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>EAB Max Snijder Award 2022</b> by the European Association for Biometrics (EAB)
+                    </span><br>
+                    <span class="paper-author">
+                        For the work "Advancing ECG Biometrics to the Deep Learning Era: Towards a Complete End-to-End Solution",
+                        part of my PhD research, focused on end-to-end ECG biometrics, including models, explainability, and integrated template security.
+                        The Max Snijder Award is granted to a researcher, who through his work expressed a wider perspective to get a
+                        broader picture on biometric applications. 
+                    </span>
+                    <div class="paper-links">
+                        <a href="files/pdf/maxsnijderaward2022.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
+                        <a href="files/pdf/reporteabaward2022.pdf" target="_blank"><span class="gray-button small-button">media report</span></a>
+                        <a href="https://www.biometricupdate.com/202209/2022-eab-awards-honor-research-on-barriers-to-ecg-finger-vein-and-face-biometrics" target="_blank"><span class="gray-button small-button">news article</span></a>
+                        <a href="https://www.igd.fraunhofer.de/en/media-center/news/winners-of-the-16th-european-biometrics-max-snijder--research--a.html" target="_blank"><span class="gray-button small-button">news article</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Best Ph.D. Student Live Presentation</b> by the Jury at the NIS Workshop (INESC TEC)
+                    </span><br>
+                    <span class="paper-author">
+                        For the work "The Secure Triplet Loss: A Unifying Framework for Biometric Security", on the revised formulation of the Secure Triplet Loss
+                        and how it can achieve cancelability and unlinkability without separate template protection schemes.
+                    </span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b><emph>Computers</emph> Journal Best Paper Award</b> at IWBF 2020
+                    </span><br>
+                    <span class="paper-author">
+                        For the paper "Secure Triplet Loss for End-to-End Deep Biometrics", on the initial formulation of the Secure Triplet Loss and how it
+                        can promote cancelability without performance decay in biometric verification models.
+                    </span>
+                    <div class="paper-links">
+                        <a href="files/pdf/jpinto2020iwbf.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
+                        <a href="https://bip.inesctec.pt/en/noticias/inesc-tec-conference-invited-acknowledged-researchers-and-companies-in-the-fields-of-biometrics-and-forensics/" target="_blank"><span class="gray-button small-button">news article</span></a>
+                    </div>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Best Session Paper Award</b> at IEEE IPAS 2020
+                    </span><br>
+                    <span class="paper-author">
+                        For the paper "Audiovisual Classification of Group Emotion Valence Using Activity Recognition Networks", on the application of pretrained activity recognition
+                        networks for the multimodal audiovisual classification of emotion valence in groups of people.
+                    </span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Prémio Católica 2012</b> by the Health Sciences Institute of the Portuguese Catholic University (UCP)
+                    </span><br>
+                    <span class="paper-author">
+                        First prize awarded to the work "Avós de Hoje: Problemas e Soluções" (Today's Grandparents: Problems and Solutions), on the main problems affecting the elderly in the city of Vila Real, Portugal,
+                        and how society can solve them.
+                    </span>
+                    <div class="paper-links">
+                        <a href="files/pdf/premiocatolica2012.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
+                        <a href="https://arquivo.pt/wayback/20131107041812/http://www.ics.lisboa.ucp.pt/site/custom/template/ucptpl_fac.asp?SSPAGEID=934&lang=1&artigo=283&artigoID=388" target="_blank"><span class="gray-button small-button">ranking</span></a>
+                        <a href="files/pdf/artigojnpc2012.pdf" target="_blank"><span class="gray-button small-button">news article</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: 150px;"></div>
+
+        </div>
+    </div>
+
+    <div id="interns-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopUp('interns-popup')"><i class="fas fa-times"></i></span>
+
+            <span class="publications-full-title">interns</span>
+
+            <div id="publications-full">
+                <span class="publications-subtitle">past interns (23)</span>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Carvalho and Paula Ogata</b> (2022)
+                    </span><br>
+                    <span class="paper-author">"Face recognition",</span>
+                    <span class="paper-venue">at INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Carvalho and Paula Ogata</b> (2022)
+                    </span><br>
+                    <span class="paper-author">"Face recognition",</span>
+                    <span class="paper-venue">at INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Mariana Calado</b> (2021)
+                    </span><br>
+                    <span class="paper-author">"Drowsiness detection using ECG signals",</span>
+                    <span class="paper-venue">at INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Brenda Nogueira and Ana Maria Sousa</b> (July 2021)
+                    </span><br>
+                    <span class="paper-author">"Drowsiness detection using ECG signals",</span>
+                    <span class="paper-venue">at CTM Summer Internships 2021, INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Romão and Bernardo Gabriel</b> (July 2021)
+                    </span><br>
+                    <span class="paper-author">"Motion estimation for activity recognition",</span>
+                    <span class="paper-venue">at CTM Summer Internships 2021, INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Renata Lei and Rafael Cristino</b> (July 2021)
+                    </span><br>
+                    <span class="paper-author">"Hotel recognition for fighting human trafficking",</span>
+                    <span class="paper-venue">at CTM Summer Internships 2021, INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Guilherme Barbosa</b> (2021)
+                    </span><br>
+                    <span class="paper-author">"An End-to-End Learnt 2D representation for ECG-Based Biometric Authentication",</span>
+                    <span class="paper-venue">at INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Pedro Duarte Lopes</b> (2021)
+                    </span><br>
+                    <span class="paper-author">"Interpretability for Face Presentation Attack Detection",</span>
+                    <span class="paper-venue">at INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Susana Lima</b> (July 2020)
+                    </span><br>
+                    <span class="paper-author">"Detecting Drowsiness Through ECG and Steering Wheel Data",</span>
+                    <span class="paper-venue">at CTM Summer Internships 2020, INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Fonseca</b> (July 2020)
+                    </span><br>
+                    <span class="paper-author">"Face Photograph Analytics",</span>
+                    <span class="paper-venue">at NEB Outclass Internship, INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Fonseca</b> (2020)
+                    </span><br>
+                    <span class="paper-author">"Face Photograph Analytics",</span>
+                    <span class="paper-venue">at NEB Outclass Internship, INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Catarina Lopes</b> (2019-2020)
+                    </span><br>
+                    <span class="paper-author">"Face photograph analytics for automatic assessment of ICAO guideline compliance",</span>
+                    <span class="paper-venue">at INESC TEC</span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Pedro Silva, Paulo Costa, Manuel Curral, Gil Teixeira, Pedro Neto, Martim Silva, João Mendes, João Moura, and Carolina Afonso</b> (July 2019)
+                    </span><br>
+                    <span class="paper-author">"Face photograph analytics for automatic assessment of ICAO guideline compliance",</span>
+                    <span class="paper-venue">at CTM Summer Internships 2019, INESC TEC</span>
+                </div>
+            </div>
+
+            <div style="height: 150px;"></div>
+
+        </div>
+    </div>
+
+    <div id="projects-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopUp('projects-popup')"><i class="fas fa-times"></i></span>
+
+            <span class="publications-full-title">research projects</span>
+
+            <div id="publications-full">
+                <span class="publications-subtitle">current (1)</span>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>THEIA: Automated Perception Driving</b> (since April 2022)
+                    </span><br>
+                    <span class="paper-author">
+                        Researcher at Bosch Car Multimedia, in collaboration with the University of Porto and INESC TEC, on automated perception algorithms
+                        for autonomous vehicles using enhanced LiDAR sensor fusion. Technical co-leadership of the subproject responsible for infrastructure,
+                        security, and privacy for autonomous driving perception data and information.
+                    </span>
+                </div>
+
+                <span class="publications-subtitle">past (4)</span>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Aurora</b> (January 2022 - April 2022)
+                    </span><br>
+                    <span class="paper-author">
+                        Researcher at INESC TEC, working on improved methodologies for audiovisual wellbeing monitoring of shared autonomous vehicle occupants.
+                    </span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Easy Ride: Experience is Everything</b> (February 2020 - December 2021)
+                    </span><br>
+                    <span class="paper-author">
+                        Researcher at INESC TEC, developing pattern recognition algorithms for efficient in-vehicle activity recognition and wellbeing measurement.
+                    </span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>AUTOMOTIVE: Automatic Multimodal Drowsiness Detection for Smart Vehicles</b> (July 2019 - November 2021)
+                    </span><br>
+                    <span class="paper-author">
+                        Researcher at INESC TEC, developing driver drowsiness monitoring using unconstrained video and physiological signals.
+                    </span>
+                </div>
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>CHIC: Cooperative Holistic View on Internet and Content</b> (January 2018 - September 2018)
+                    </span><br>
+                    <span class="paper-author">
+                        Researcher at FEUP, working on enhanced optical character recognition and automatic quality assessment tools
+                        for print media documents retrieval.
+                    </span>
                 </div>
             </div>
 
@@ -1655,6 +1763,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script language="JavaScript" src="files/js/script.js"></script>
-<script>initColour(); setTimeout(fitResearchSize, 1000); setTimeout(fitActivitySize, 1000);</script>
+<script>initColour(); setTimeout(fitResearchSize, 1000);</script>
 
 </html>
