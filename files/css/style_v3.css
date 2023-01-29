@@ -449,11 +449,41 @@ a:active {
     position: relative;
 }
 
+#activity-title {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: calc(50% + 20px);
+    font-size: 2em;
+    color: hsl(206, 66%, 55%);
+    text-align: right;
+}
+
 .activity-slide {
     display: block;
-    width: 100%;
-    text-align: center;
+    width: 50%;
+    margin: 0 0 0 50%;
+    text-align: left;
     z-index: 1;
+}
+
+.activity-slide:before {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    content: ' ';
+    display: block;
+    width: 1px;
+    height: calc(100% - 50px);
+    margin-left: -0.5px;
+    background: rgb(190, 190, 190);
+    background: -moz-linear-gradient(top, rgba(190, 190, 190, 0) 0%, rgb(190, 190, 190) 8%, rgb(190, 190, 190) 92%, rgba(190, 190, 190, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(190, 190, 190, 1)), color-stop(100%, rgba(190, 190, 190, 1)));
+    background: -webkit-linear-gradient(top, rgba(190, 190, 190, 0) 0%, rgb(190, 190, 190) 8%, rgb(190, 190, 190) 92%, rgba(190, 190, 190, 0) 100%);
+    background: -o-linear-gradient(top, rgba(190, 190, 190, 0) 0%, rgb(190, 190, 190) 8%, rgb(190, 190, 190) 92%, rgba(190, 190, 190, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(190, 190, 190, 0) 0%, rgb(190, 190, 190) 8%, rgb(190, 190, 190) 92%, rgba(190, 190, 190, 0) 100%);
+    background: linear-gradient(to bottom, rgba(190, 190, 190, 0) 0%, rgb(190, 190, 190) 8%, rgb(190, 190, 190) 92%, rgba(190, 190, 190, 0) 100%);
+    z-index: 5;
 }
 
 .activity-subtitle {
@@ -525,7 +555,7 @@ a:active {
     text-align: center;
 }
 
-.news-title, .experience-title, .publications-title, .skills-title, #activity-title {
+.news-title, .experience-title, .publications-title, .skills-title {
     display: block;
     padding: 0px 0px 10px 0px;
     font-size: 2em;
@@ -617,12 +647,7 @@ a:active {
     color: hsl(206, 66%, 55%);
 }
 
-#activity .activity-item + .activity-subsubtitle {
-    margin-top: 20px;
-}
-
-#publications .fas,
-.activity-item .fas {
+#publications .fas {
     display: block;
     position: relative;
     left: -20px;
@@ -652,9 +677,14 @@ a:active {
 }
 
 #activity .activity-item {
-    margin: 10px 0 0 0;
-    text-align: center;
+    margin: 0;
+    padding-left: 20px;
+    text-align: left;
     cursor: pointer;
+}
+
+#activity .activity-item + .activity-item {
+    margin-top: 15px;
 }
 
 #publications-full .paper-title {
@@ -675,7 +705,13 @@ a:active {
     font-size: 1.1rem;
     font-weight: bold;
     vertical-align: super;
-    margin-left: 10px;
+    margin-left: 15px;
+}
+
+.activity-item .fas {
+    color: #bebebe;
+    vertical-align: super;
+    margin-left: 5px;
 }
 
 #publications-full .paper-venue {
@@ -866,7 +902,7 @@ a:active {
     margin-left: -1px;
     background: rgb(213, 213, 213);
     background: -moz-linear-gradient(top, rgba(213, 213, 213, 0) 0%, rgb(213, 213, 213) 8%, rgb(213, 213, 213) 92%, rgba(213, 213, 213, 0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(213, 213, 213, 1)), color-stop(100%, rgba(213, 213, 213, 1)));
     background: -webkit-linear-gradient(top, rgba(213, 213, 213, 0) 0%, rgb(213, 213, 213) 8%, rgb(213, 213, 213) 92%, rgba(213, 213, 213, 0) 100%);
     background: -o-linear-gradient(top, rgba(213, 213, 213, 0) 0%, rgb(213, 213, 213) 8%, rgb(213, 213, 213) 92%, rgba(213, 213, 213, 0) 100%);
     background: -ms-linear-gradient(top, rgba(213, 213, 213, 0) 0%, rgb(213, 213, 213) 8%, rgb(213, 213, 213) 92%, rgba(213, 213, 213, 0) 100%);
@@ -1226,4 +1262,27 @@ li:hover .flag-title {
     height: 100px;
     background: linear-gradient(180deg, #11111100 0%,  #111111FF 95%);
     background-blend-mode: multiply;
+}
+
+@media(max-width: 1000px) {
+    .activity-slide:before {
+        display: none;
+    }
+
+    #activity-title {
+        position: static;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .activity-slide {
+        width: 100%;
+        margin: 0;
+    }
+
+    #activity .activity-item {
+        padding-left: 0;
+        text-align: center;
+    }
+
 }

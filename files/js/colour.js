@@ -74,7 +74,7 @@ function setColours(colours) {
     style.sheet.insertRule('.news-item:hover .news-item-text {color:' + strong_colour + ';');
     style.sheet.insertRule('.activity-item .item-number {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.activity-item:hover .item-title, .activity-item:hover .item-title-bold {color: ' + strong_colour + ';}');
-    style.sheet.insertRule('#publications .fas, .activity-item .fas {color: ' + strong_colour + ';}');
+    style.sheet.insertRule('#publications .fas {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.c100.blue .bar, .c100.blue .fill {border-color: ' + weak_colour + ' !important;');
     style.sheet.insertRule('.c100.blue:hover > span > i {color: ' + strong_colour + ';}');
     style.sheet.insertRule('.c100.blue:hover .bar, .c100.blue:hover .fill {border-color: ' + strong_colour + ' !important;}');
