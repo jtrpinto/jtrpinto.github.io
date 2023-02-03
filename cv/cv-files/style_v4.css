@@ -181,7 +181,7 @@ page[size="A4"] {
 }
 
 .section + .section {
-    margin-top: 0.35cm;
+    margin-top: 0.45cm;
 }
 
 .page-odd .section .title {
