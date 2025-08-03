@@ -813,6 +813,9 @@
                 <div class="activity-item" onclick="openPopUp('events-popup')">
                     <span class="item-number">15</span><span class="item-title">scientific events</span><i class="fas fa-plus-circle"></i>
                 </div>
+                <div class="activity-item" onclick="openPopUp('phd-students-popup')">
+                    <span class="item-number">1</span><span class="item-title">doctoral theses supervised</span><i class="fas fa-plus-circle"></i>
+                </div>
                 <div class="activity-item" onclick="openPopUp('students-popup')">
                     <span class="item-number">16</span><span class="item-title">master theses supervised</span><i class="fas fa-plus-circle"></i>
                 </div>
@@ -890,6 +893,8 @@
                     <span class="paper-year">2024</span>
                     <div class="paper-links">
                         <a href="https://doi.org/10.1109/TIV.2024.3409409" target="_blank"><span class="gray-button small-button">link</span></a>
+                        <a href="files/pdf/moliveira2024mpp.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
+                        <a href="files/bibtex/moliveira2024mpp.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
                 </div>
                 <div class="paper">
@@ -901,6 +906,8 @@
                     <span class="paper-year">2024</span>
                     <div class="paper-links">
                         <a href="https://dx.doi.org/10.1109/TIV.2024.3387113" target="_blank"><span class="gray-button small-button">link</span></a>
+                        <a href="files/pdf/cpereira2024weather.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
+                        <a href="files/bibtex/cpereira2024weather.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
                 </div>
                 <div class="paper">
@@ -1065,10 +1072,12 @@
                     <span class="paper-author">J. Tapia, M. Nieto, J. Espin, A. Sanchez, N. Damer, C. Busch, M. Ivanovska, L. Todorov,
                         R. Khizbullin, A. Grishin, L. Lazarevic, D. Schulz, S. Gonzalez, K. Kotwal, A. Mohammadi, S. Marcel,
                         R. Mudgalgundurao, K. Raja, P. Schuch, P. Couto, <u>J. R. Pinto</u>, M. Xavier, A. Valenzuela, B. Batagelj,
-                        J. Barrachina, M. Peterlin, P. Peer, A. Muhammed, D. Nunes, N. Gonçalves, S. Patwardhan, and R. Ramachandra</span>
+                        J. Barrachina, M. Peterlin, P. Peer, A. Muhammed, D. Nunes, N. Gonçalves, S. Patwardhan, and R. Ramachandra,</span>
                     <span class="paper-venue">International Joint Conference on Biometrics (IJCB 2025),</span>
                     <span class="paper-year">2025 [in press]</span>
                     <div class="paper-links">
+                        <a href="https://arxiv.org/abs/2507.20404" target="_blank"><span class="gray-button small-button">arXiv</span></a>
+                        <a href="files/bibtex/jtapia2025idcardpad.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
                 </div>
                 <div class="paper">
@@ -1419,6 +1428,7 @@
                     <span class="paper-venue">Doctoral Programme in Electrical and Computers Engineering, Universidade do Porto,</span>
                     <span class="paper-year">2022</span>
                     <div class="paper-links">
+                        <a href="https://hdl.handle.net/10216/147121" target="_blank"><span class="gray-button small-button">link</span></a>
                         <a href="files/pdf/thesis_jtrpinto_2022_vt1.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
                         <a href="files/bibtex/jpinto2022thesis.bib" target="_blank"><span class="gray-button small-button">bibtex</span></a>
                     </div>
@@ -1444,6 +1454,29 @@
                         <a href="files/pdf/maxsnijderaward2022.pdf" target="_blank"><span class="gray-button small-button">pdf</span></a>
                     </div>
                 </div>
+            </div>
+
+            <div style="height: 150px;"></div>
+
+        </div>
+    </div>
+
+    <div id="phd-students-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopUp('phd-students-popup')"><i class="fas fa-times"></i></span>
+
+            <span class="publications-full-title">doctoral students</span>
+
+            <div id="publications-full">              
+
+                <span class="publications-subtitle">current students (1)</span>
+                 <div class="paper">
+                    <span class="paper-title">
+                        <b>Ana Margarida Mendes Dias</b> (as Supervisor in External Institution, 2022/23)
+                    </span><br>
+                    <span class="paper-author">"Towards Robust and Interpretable Adult-to-Young Face Recognition in Unconstrained Scenarios: A Case Study on Automated Border Control",</span>
+                    <span class="paper-venue">Doctoral Programme in Informatics, University of Beira Interior</span>
+                 </div>
             </div>
 
             <div style="height: 150px;"></div>
@@ -1865,6 +1898,100 @@
                         Researcher at FEUP, working on enhanced optical character recognition and automatic quality assessment tools
                         for print media documents retrieval.
                     </span>
+                </div>
+            </div>
+
+            <div style="height: 150px;"></div>
+
+        </div>
+    </div>
+
+    <div id="juries-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopUp('juries-popup')"><i class="fas fa-times"></i></span>
+
+            <span class="publications-full-title">academic juries</span>
+
+            <div id="publications-full">              
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Alexandre Ferreira Nunes</b> (as M.Sc. Dissertation Examiner, July 11, 2025)
+                    </span><br>
+                    <span class="paper-author">"From Classification to Detection: Adapting Semi-Supervised Frameworks to Object Detection",</span>
+                    <span class="paper-venue">M.Sc. Informatics and Computing Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Henrique Seabra Ferreira</b> (as M.Sc. Dissertation Examiner, July 11, 2025)
+                    </span><br>
+                    <span class="paper-author">"Perception Algorithms Optimization for Real-Time Autonomous Driving Applications",</span>
+                    <span class="paper-venue">M.Sc. Informatics and Computing Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Daniel José Mendes Rodrigues</b> (as M.Sc. Dissertation Examiner, July 11, 2025)
+                    </span><br>
+                    <span class="paper-author">"Human Motion Generation for Synthetic Autonomous Driving Datasets",</span>
+                    <span class="paper-venue">M.Sc. Informatics and Computing Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Nikolas Andrej Ivakko</b> (as M.Sc. Dissertation Examiner, October 16, 2024)
+                    </span><br>
+                    <span class="paper-author">"Exploring 3D and kinematic information for 2D Human Pose Estimation",</span>
+                    <span class="paper-venue">M.Sc. Data Science and Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Filipe Miranda Fragão</b> (as M.Sc. Dissertation Examiner, October 16, 2024)
+                    </span><br>
+                    <span class="paper-author">"Explainability and Detection of Anomalies in Video",</span>
+                    <span class="paper-venue">M.Sc. Data Science and Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Pedro Fontes Vilhena e Mascarenhas</b> (as M.Sc. Dissertation Examiner, March 22, 2024)
+                    </span><br>
+                    <span class="paper-author">"Robust Detection and Tracking of Players and Ball in Padel Matches: A Computer Vision Approach",</span>
+                    <span class="paper-venue">M.Sc. Informatics and Computing Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>André Filipe Vila Chã Afonso</b> (as M.Sc. Dissertation Examiner, October 3, 2023)
+                    </span><br>
+                    <span class="paper-author">"Learning to detect defects in industrial production lines from a few examples",</span>
+                    <span class="paper-venue">M.Sc. Data Science and Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Fábio Manuel Taveira da Cunha</b> (as M.Sc. Dissertation Examiner, September 13, 2023)
+                    </span><br>
+                    <span class="paper-author">"Don't look away! Keeping the human in the loop with a interactive active learning platform",</span>
+                    <span class="paper-venue">M.Sc. Electrical and Computer Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>Mariana Margalho Alves Calado</b> (as M.Sc. Dissertation Examiner, September 13, 2023)
+                    </span><br>
+                    <span class="paper-author">"Application of Explainable AI in Deep Learning Models",</span>
+                    <span class="paper-venue">M.Sc. Biomedical Engineering, Universidade do Porto</span>
+                </div>
+
+                <div class="paper">
+                    <span class="paper-title">
+                        <b>João Filipe Delgado Lemos de Matos</b> (as M.Sc. Dissertation Examiner, February 22, 2023)
+                    </span><br>
+                    <span class="paper-author">"Synthetic Data in Semantic Segmentation and Lane Estimation for Autonomous Driving",</span>
+                    <span class="paper-venue">M.Sc. Computer Vision, Universidade do Porto</span>
                 </div>
             </div>
 
